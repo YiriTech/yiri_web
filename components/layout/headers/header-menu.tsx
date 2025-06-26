@@ -5,22 +5,21 @@ const MainMenu = () => {
         <>
             <ul>
                 <li className="menu-item-has-children">
-                    <Link href="#">Home<i className="fas fa-angle-down"></i></Link>
+                    <Link href="/">Accueil<i className="fas fa-angle-down"></i></Link>
                     <ul className="sub-menu">
-                        <li><Link href="/">Home 01</Link></li>
-                        <li><Link href="/home-two">Home 02</Link></li>
-                        <li><Link href="/home-three">Home 03</Link></li>
-                        <li><Link href="/home-four">Home 04</Link></li>
-                        <li><Link href="/home-five">Home 05</Link></li>
+                        <li><Link href="/home-two">Yiri Academey</Link></li>
+                        <li><Link href="/home-three">Yiri Think tank</Link></li>
+                        <li><Link href="/home-four">Yiri Conferences</Link></li>
+                        <li><Link href="/home-five">Yiri Digital</Link></li>
                     </ul>
                 </li>
                 <li className="menu-item-has-children"><Link href="#">Pages <i className="fas fa-angle-down"></i></Link>
                     <ul className="sub-menu">
-                        <li><Link href="/about">About Us</Link></li>
+                        <li><Link href="/about">A propos</Link></li>
                         <li><Link href="/testimonial">Testimonials</Link></li>
-                        <li><Link href="/pricing-plan">Pricing Plan</Link></li>
+                        {/* <li><Link href="/pricing-plan">Pricing Plan</Link></li> */}
                         <li><Link href="/faq">Faq</Link></li>
-                        <li className="menu-item-has-children"><Link href="#">Team<i className="fas fa-angle-right"></i></Link>
+                        <li className="menu-item-has-children"><Link href="#">Equipe<i className="fas fa-angle-right"></i></Link>
                             <ul className="sub-menu">
                                 <li><Link href="/team">Team Style 01</Link></li>
                                 <li><Link href="/team-two">Team Style 02</Link></li>
@@ -30,19 +29,23 @@ const MainMenu = () => {
                         <li><Link href="/404">404</Link></li>
                     </ul>
                 </li>
-                <li className="menu-item-has-children"><Link href="#">Services <i className="fas fa-angle-down"></i></Link>
-                    <ul className="sub-menu">
-                        <li><Link href="/services">Services 01</Link></li>
+                <li className="menu-item-has-children"><Link href="/services">Visions
+                 {/* <i className="fas fa-angle-down"></i> */}
+                 </Link>
+                    {/* <ul className="sub-menu">
+                        <li><Link href="/services">Vision</Link></li>
                         <li><Link href="/services-two">Services 02</Link></li>
                         <li><Link href="/services/data-analytics">Services Details</Link></li>
-                    </ul>
+                    </ul> */}
                 </li>
-                <li className="menu-item-has-children"><Link href="#">Portfolio <i className="fas fa-angle-down"></i></Link>
-                    <ul className="sub-menu">
+                <li className="menu-item-has-children"><Link href="/portfolio/2-columns">Evenements en Image 
+                {/* <i className="fas fa-angle-down"> </i> */}
+                    </Link>
+                    {/* <ul className="sub-menu">
                         <li><Link href="/portfolio/2-columns">2 Columns</Link></li>
                         <li><Link href="/portfolio/3-columns">3 Columns</Link></li>
                         <li><Link href="/portfolio/gateway-integration">Portfolio Details</Link></li>
-                    </ul>
+                    </ul> */}
                 </li>
                 <li className="menu-item-has-children"><Link href="#">Blog <i className="fas fa-angle-down"></i></Link>
                     <ul className="sub-menu">

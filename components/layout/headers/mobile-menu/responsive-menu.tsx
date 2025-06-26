@@ -3,36 +3,36 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 
 const ResponsiveMenu = () => {
-    const [activeMenu, setActiveMenu] = useState(null);
-    const active = (value) => setActiveMenu(value === activeMenu ? null : value),
-    activeIcon = (value) => (activeMenu == value ? "mean-clicked" : ""),
-    activeSubMenu = (value) => value == activeMenu ? { display: "block" } : { display: "none" };
+    const [activeMenu, setActiveMenu] = useState<string |null>(null);
+    const active = (value:string) => setActiveMenu(value === activeMenu ? null : value),
+    activeIcon = (value:string) => (activeMenu == value ? "mean-clicked" : ""),
+    activeSubMenu = (value:string) => value == activeMenu ? { display: "block" } : { display: "none" };
 
-    const [activeMenus, setActiveMenus] = useState(null);
-    const actives = (value) => setActiveMenus(value === activeMenus ? null : value),
-    activeIcons = (value) => (activeMenus == value ? "mean-clicked" : ""),
-    activeSubMenus = (value) => value == activeMenus ? { display: "block" } : { display: "none" };
+    const [activeMenus, setActiveMenus] = useState<string | null>(null);
+    const actives = (value:string) => setActiveMenus(value === activeMenus ? null : value),
+    activeIcons = (value:string) => (activeMenus == value ? "mean-clicked" : ""),
+    activeSubMenus = (value:string) => value == activeMenus ? { display: "block" } : { display: "none" };
   return (
         <>
             <ul>
                 <li className='menu-item-has-children'>
-                    <Link href='#'>Home</Link>
+                    <Link href='#'>Accueil</Link>
                     <ul className='sub-menu' style={activeSubMenu("home")}>
-                        <li><Link href="/">Home 01</Link></li>
-                        <li><Link href="/home-two">Home 02</Link></li>
-                        <li><Link href="/home-three">Home 03</Link></li>
-                        <li><Link href="/home-four">Home 04</Link></li>
-                        <li><Link href="/home-five">Home 05</Link></li>
+                        <li><Link href="/">Accueil</Link></li>
+                        <li><Link href="/home-two">Yiri Academey</Link></li>
+                        <li><Link href="/home-three">Yiri Think tank</Link></li>
+                        <li><Link href="/home-four">Yiri Conferences</Link></li>
+                        <li><Link href="/home-five">Yiri Digital</Link></li>
                     </ul>
                     <a className={`mean-expand ${activeIcon("home")}`} onClick={() => active("home")}></a>
                 </li>  
                 <li className='menu-item-has-children'>
                     <Link href='#'>Pages</Link>
                     <ul className='sub-menu' style={activeSubMenu("pages")}>
-                        <li><Link href="/about">About Us</Link></li>
+                        <li><Link href="/about">A propos</Link></li>
                         <li><Link href="/testimonial">Testimonials</Link></li>
-                        <li><Link href="/pricing-plan">Pricing Plan</Link></li>
-                        <li className='menu-item-has-children'><Link href='#'>Teams</Link>
+                        {/* <li><Link href="/pricing-plan">Pricing Plan</Link></li> */}
+                        <li className='menu-item-has-children'><Link href='#'>Equipe</Link>
                             <ul className='sub-menu' style={activeSubMenus("team")}>
                                 <li><Link href="/team">Team Style 01</Link></li>
                                 <li><Link href="/team-two">Team Style 02</Link></li>

@@ -19,8 +19,8 @@ const BannerOne = () => {
                     <div className="row align-items-center gy-4 justify-content-center">
                         <div className="col-xl-6 col-lg-6">
                             <div className="banner__one-content">
-                                <span className="subtitle-one">Digital Growth</span>
-                                <h2>Blueprints for Digital <span>Excellence</span></h2>
+                                <span className="subtitle-one">L'avenir de la jeunesse</span>
+                                <h2>La tech dans <span>Excellence</span></h2>
                                 <p>Our team about exploring new possibilities and embracing emerging trends to deliver transformative IT solutions</p>
                                 <Link href="/services" className="btn-two">Find Solutions
                                     <i className="fas fa-arrow-right"></i>

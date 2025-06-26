@@ -12,12 +12,13 @@ import WorkArea from "./work";
 import FooterOne from "@/components/layout/footers/footer-one";
 import Blog from "./blog";
 import Testimonial from "./testimonial";
+import HeaderTwo from "@/components/layout/headers/header/header-two";
 
-const HomeOne = () => {
+const Home = () => {
     return (
         <div>
             <SEO pageTitle='Technology' />
-            <HeaderOne />
+            <HeaderTwo variant="" />
             <BannerOne />
             <About />
             <ChooseUs />
@@ -33,4 +34,4 @@ const HomeOne = () => {
     );
 };
 
-export default HomeOne;
+export default Home;

@@ -8,7 +8,7 @@ import logo2 from "../../../../public/assets/img/logo-2.png";
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import Link from 'next/link';
 
-const HeaderTwo = ({variant}) => {
+const HeaderTwo = ({variant}:{variant:string}) => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [menuSidebar, setMenuSidebar] = useState(false);
     const [search, setSearch] = useState(false);
@@ -87,7 +87,7 @@ const HeaderTwo = ({variant}) => {
         </div>
         <SideBar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
         <MobileMenuPopup isOpen={menuSidebar} setIsOpen={setMenuSidebar} popupLogo={logo2} />
-        <Search isOpen={search} setIsOpen={setSearch} />
+        <Search addClass={""} isOpen={search} setIsOpen={setSearch} />
         </>
     );
 };

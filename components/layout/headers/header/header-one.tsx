@@ -7,8 +7,9 @@ import logo1 from "../../../../public/assets/img/logo-1.png";
 import logo2 from "../../../../public/assets/img/logo-2.png";
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import Link from 'next/link';
+import Logo from '../../logo';
 
-const HeaderOne = ({variant}) => {
+const HeaderOne = ({variant}:{variant:string}) => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [menuSidebar, setMenuSidebar] = useState(false);
     const [search, setSearch] = useState(false);
@@ -46,7 +47,8 @@ const HeaderOne = ({variant}) => {
                 <div className="header__area-menubar">
                     <div className="header__area-menubar-left">
                         <div className="header__area-menubar-left-logo">
-                            <Link href="/"><img src={logo1.src} alt="logo" /></Link>
+                            {/* <Link href="/"><img src={logo1.src} alt="logo" /></Link> */}
+                            <Logo />
                         </div>
                     </div>
                     <div className="header__area-menubar-center">
@@ -83,7 +85,7 @@ const HeaderOne = ({variant}) => {
         </div>
         <SideBar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
         <MobileMenuPopup isOpen={menuSidebar} setIsOpen={setMenuSidebar} popupLogo={logo2} />
-        <Search isOpen={search} setIsOpen={setSearch} />
+        <Search isOpen={search} setIsOpen={setSearch} addClass={""} />
         </>
     );
 };

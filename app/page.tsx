@@ -1,9 +1,9 @@
-import HomeOne from "@/components/pages/homes/home";
+import Home from "@/components/pages/homes/home";
 
-export default function Home() {
+export default function HomePage() {
     return (
         <>
-            <HomeOne />
+            <Home />
         </>
     );
 }
