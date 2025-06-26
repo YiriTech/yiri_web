@@ -1,49 +1,120 @@
-import banner1 from "../../../../public/assets/img/banner/banner-right-img.jpg";
-import bannerShape from "../../../../public/assets/img/shape/banner-shape.png";
-import Link from "next/link";
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade } from 'swiper/modules';
+import banner1 from "../../../../public/assets/img/banner/banner-home-1.png";
+import banner2 from "../../../../public/assets/img/banner/banner-home-2.png";
+import banner3 from "../../../../public/assets/img/banner/banner-home-3.png";
+import shape1 from "../../../../public/assets/img/shape/banner-two-shape-2.png";
+import shape2 from "../../../../public/assets/img/shape/banner-two-shape-3.png";
+import shape3 from "../../../../public/assets/img/shape/banner-two-shape-4.png";
+import shapeContent from "../../../../public/assets/img/shape/content.png";
 
-const BannerOne = () => {
-    return (
-            <>
-            <div className="banner__one"> 
-                <div className="banner-shape">
-                    <div className="shape banner-shape-1"></div>
-                    <div className="shape banner-shape-2"></div>
-                    <div className="shape banner-shape-3"></div>
-                    <div className="shape banner-shape-4"></div>
-                    <img className="shape banner-shape-5" src={bannerShape.src} alt="image" />
-                    <div className="shape banner-shape-7"></div>
-                    <div className="shape banner-shape-6"></div>
-                </div>
-                <div className="container">
-                    <div className="row align-items-center gy-4 justify-content-center">
-                        <div className="col-xl-6 col-lg-6">
-                            <div className="banner__one-content">
-                                <span className="subtitle-one">L'avenir de la jeunesse</span>
-                                <h2>La tech dans <span>Excellence</span></h2>
-                                <p>Our team about exploring new possibilities and embracing emerging trends to deliver transformative IT solutions</p>
-                                <Link href="/services" className="btn-two">Find Solutions
-                                    <i className="fas fa-arrow-right"></i>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col-xl-5 offset-xl-1 col-lg-6 col-md-9">
-                            <div className="banner__one-image">
-                                <div className="banner__one-image-wrapper">
-                                    <div className="banner__one-image-wrapper-shapes animate-rotate">
-                                        <div className="shape shape-1"></div>
-                                        <div className="shape shape-2"></div>
-                                    </div>
-                                    <img src={banner1.src} alt="banner-image" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+const BannerTwo = () => {
+  	return (
+		<>
+			<div className="banner__two">
+				<Swiper
+					effect= 'fade'
+					speed={2000}
+					loop={true}
+					autoplay={{
+						delay: 5000,
+						disableOnInteraction: false,
+						reverseDirection: false,
+					}}
+					modules={[Autoplay, EffectFade]}
+				>
+					<SwiperSlide>
+						<div className="banner__two-single-slider" style={{backgroundImage: `url(${banner1.src})`}}>
+							<div className="banner-two-shape">
+								<div className="banner-two-shape-1 shape">
+									<img src={shapeContent.src} alt="shape" className="animate-rotate" />
+								</div>
+								<div className="banner-two-shape-2 shape">
+									<img src={shape1.src} alt="image" />
+								</div>
+								<div className="banner-two-shape-3 shape">
+									<img src={shape2.src} alt="image" />
+								</div>
+								<div className="banner-two-shape-4 shape">
+									<img src={shape3.src} alt="image" />
+								</div>
+							</div>
+							<div className="container">
+								<div className="row">
+									<div className="col-xl-5 col-lg-10 col-md-8">
+										<div className="banner__two-content">
+											<h2>YIRI TECH AFRICA</h2>
+											<p>L'Afrique technologiquement souveraine.<br/>Par sa jeunesse, pour son avenir.</p>
+											<Link href="/contact" className="btn-two">Notre Vision<i className="fas fa-arrow-right"></i></Link>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide>
+						<div className="banner__two-single-slider" style={{backgroundImage: `url(${banner2.src})`}}>
+							<div className="banner-two-shape">
+								<div className="banner-two-shape-1 shape">
+									<img src={shapeContent.src} alt="shape" className="animate-rotate" />
+								</div>
+								<div className="banner-two-shape-2 shape">
+									<img src={shape1.src} alt="image" />
+								</div>
+								<div className="banner-two-shape-3 shape">
+									<img src={shape2.src} alt="image" />
+								</div>
+								<div className="banner-two-shape-4 shape">
+									<img src={shape3.src} alt="image" />
+								</div>
+							</div>
+							<div className="container">
+								<div className="row">
+									<div className="col-xl-5 col-lg-10 col-md-8">
+										<div className="banner__two-content">
+											<h2>FORMER • DIGITALISER • INNOVER</h2>
+											<p>Nous formons les talents.<br/>Digitalisons les PME.<br/>Créons l'avenir tech africain.</p>
+											<Link href="/contact" className="btn-two">Rejoignez-nous<i className="fas fa-arrow-right"></i></Link>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide>
+						<div className="banner__two-single-slider" style={{backgroundImage: `url(${banner3.src})`}}>
+							<div className="banner-two-shape">
+								<div className="banner-two-shape-1 shape">
+									<img src={shapeContent.src} alt="shape" className="animate-rotate" />
+								</div>
+								<div className="banner-two-shape-2 shape">
+									<img src={shape1.src} alt="image" />
+								</div>
+								<div className="banner-two-shape-3 shape">
+									<img src={shape2.src} alt="image" />
+								</div>
+								<div className="banner-two-shape-4 shape">
+									<img src={shape3.src} alt="image" />
+								</div>
+							</div>
+							<div className="container">
+								<div className="row">
+									<div className="col-xl-5 col-lg-10 col-md-12">
+										<div className="banner__two-content">
+											<h2>LA TECH AU SERVICE DE <span>L'AFRIQUE</span></h2>
+											<p>Étudiants, entrepreneurs, institutions.<br/>Ensemble pour la renaissance numérique.</p>
+											<Link href="/contact" className="btn-two">Découvrir<i className="fas fa-arrow-right"></i></Link>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</SwiperSlide>
+				</Swiper>
             </div>
-        </>
-
-    );
+		</>
+	);
 };
 
-export default BannerOne;
+export default BannerTwo;

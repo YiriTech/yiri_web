@@ -11,11 +11,11 @@ import Video from "./video";
 import BlogFour from "./blog";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
 
-const HomeFour = () => {
+const Conferences = () => {
     return (
         <div>
             <SEO pageTitle='Digital Business' />
-            <HeaderFour />
+            <HeaderFour variant={""} />
             <BannerFour />
             <AboutFour />
             <ServicesFour />
@@ -29,4 +29,4 @@ const HomeFour = () => {
     );
 };
 
-export default HomeFour;
+export default Conferences;

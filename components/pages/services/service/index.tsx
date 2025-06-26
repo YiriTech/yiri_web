@@ -3,8 +3,8 @@ import SEO from "@/components/data/seo";
 import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../../common/breadcrumb";
 import ServicesMain from "./services";
-import WorkArea from "../../homes/home/work";
-import Testimonial from "../../homes/home/testimonial";
+import WorkArea from "../../homes/academy/work";
+import Testimonial from "../../homes/academy/testimonial";
 import FooterOne from "@/components/layout/footers/footer-one";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
 

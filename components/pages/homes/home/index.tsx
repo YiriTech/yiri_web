@@ -1,36 +1,37 @@
-"use client";
+"use client"
 import SEO from "@/components/data/seo";
-import ScrollToTop from "../../common/scroll/scroll-to-top";
-import HeaderOne from "@/components/layout/headers/header/header-one";
-import BannerOne from "./banner";
-import About from "./about";
-import ChooseUs from "./choose-us";
-import Features from "./features";
-import Portfolio from "./portfolio";
-import Pricing from "./pricing";
-import WorkArea from "./work";
-import FooterOne from "@/components/layout/footers/footer-one";
-import Blog from "./blog";
-import Testimonial from "./testimonial";
 import HeaderTwo from "@/components/layout/headers/header/header-two";
+import BannerTwo from "./banner";
+import AboutTwo from "./about";
+import ServicesTwo from "./services";
+import SkillArea from "./skill";
+import Team from "./team";
+import TextSlide from "../thinktank/text-slide";
+import ContactForm from "./contact-form";
+import WorkProcess from "./work";
+import TestimonialTwo from "./testimonial";
+import BlogTwo from "./blog";
+import FooterTwo from "@/components/layout/footers/footer-two";
+import ScrollToTop from "../../common/scroll/scroll-to-top";
 
 const Home = () => {
     return (
-        <div>
-            <SEO pageTitle='Technology' />
-            <HeaderTwo variant="" />
-            <BannerOne />
-            <About />
-            <ChooseUs />
-            <Features />
-            <Portfolio />
-            <Pricing />
-            <WorkArea />
-            <Testimonial />
-            <Blog />
-            <FooterOne />
-            <ScrollToTop />
-        </div>
+        <>
+            <SEO pageTitle="IT Consulting" />
+            <HeaderTwo variant=""  />
+            <BannerTwo />
+            <AboutTwo />
+            <ServicesTwo />
+            <SkillArea />
+            <Team />
+            <TextSlide />
+            <ContactForm />
+            <WorkProcess />
+            <TestimonialTwo />
+            <BlogTwo />
+            <FooterTwo />
+            <ScrollToTop />  
+        </>
     );
 };
 

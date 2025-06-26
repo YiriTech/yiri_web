@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Navigation} from 'swiper/modules';
-import testimonialBg from "../../../../public/assets/img/testimonial/testimonial.png";
+import testimonialBg from "../../../../public/assets/img/testimonial/testimonial-2.png";
+import quoteIcon from "../../../../public/assets/img/testimonial/testimonial-quote.png";
 import Link from "next/link";
 
-const Testimonial = () => {
+const TestimonialTwo = () => {
 const slideControl = {
     loop: true,
     spaceBetween: 30,
@@ -31,22 +32,22 @@ const slideControl = {
 
     return (
         <>        
-        <div className="testimonial__one section-padding">
+        <div className="testimonial__two section-padding">
             <div className="container">
-                <div className="row">
-                    <div className="col-xl-6 col-lg-6">
-                        <div className="testimonial__one-left" style={{backgroundImage: `url(${testimonialBg.src})`}}>
-                            <div className="testimonial__one-left-title">
-                                <span className="subtitle-one">Client Testimonial</span>
-                                <h2>WebTech Solutions the <span className="highlighted">transfor</span> </h2>
-                                <Link href="/contact" className="btn-one">Get Support
-                                    <i className="fas fa-arrow-right"></i>
-                                </Link>
-                            </div>
+                <div className="row justify-content-center text-center">
+                    <div className="col-xl-7 col-lg-6 col-md-7">
+                        <div className="testimonial__two-title">
+                            <span className="subtitle-one">Praise & Feedback</span>
+                            <h2>Customer Experiences</h2>
                         </div>
                     </div>
+                </div>
+                <div className="row">
                     <div className="col-xl-6 col-lg-6">
-                        <div className="testimonial__one-right">
+                        <div className="testimonial__two-left" style={{backgroundImage: `url(${testimonialBg.src})`}}></div>
+                    </div>
+                    <div className="col-xl-6 col-lg-6">
+                        <div className="testimonial__two-right">
                         <Swiper modules={[EffectFade, Autoplay, Navigation]} {...slideControl}>
                             <SwiperSlide>
                                 <div className="single-slider">
@@ -55,15 +56,15 @@ const slideControl = {
                                             <h4>Nasir Al Shakib</h4>
                                             <span>Content Creator</span>
                                         </div>
-                                        <div className="single-slider-user-rating">
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star not-rated"></i>
-                                        </div>
                                     </div>
-                                    <p>Their product exceeded his my ro expectations. The the quality and attention to  moutstandin an  and it has become an essential most a education the a man who can do tant clearly</p>
+									<p>Their product exceeded his my ro expectationsa  The the quality and attention to  moutstandin an  and it has become an essential active</p>
+                                    <div className="single-slider-user-rating mt-30">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star not-rated"></i>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
@@ -73,23 +74,26 @@ const slideControl = {
                                             <h4>Devon Lane</h4>
                                             <span>Marketing</span>
                                         </div>
-                                        <div className="single-slider-user-rating">
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star not-rated"></i>
-                                        </div>
                                     </div>
-                                    <p>Their product exceeded his my ro expectations. The the quality and attention to  moutstandin an  and it has become an essential most a education the a man who can do tant clearly</p>
+									<p>Their product exceeded his my ro expectationsa  The the quality and attention to  moutstandin an  and it has become an essential active</p>
+                                    <div className="single-slider-user-rating mt-30">
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star"></i>
+                                        <i className="fas fa-star not-rated"></i>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                         </Swiper>
-                            <div className="testimonial__one-right-bottom">
+                            <div className="testimonial__two-right-bottom">
                                 <div className="slider-arrow">
                                     <i className="swiper-button-prev fas fa-arrow-left"></i>
                                     <i className="swiper-button-next fas fa-arrow-right"></i>
                                 </div>
+							<div className="slider-quote">
+								<img src={quoteIcon.src} alt="image" />
+							</div>
                             </div>
                         </div>
                     </div>
@@ -100,4 +104,4 @@ const slideControl = {
     );
 };
 
-export default Testimonial;
+export default TestimonialTwo;

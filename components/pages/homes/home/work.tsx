@@ -1,63 +1,68 @@
-import workBg from "../../../../public/assets/img/work-process/work-process-bg.png";
-import image1 from "../../../../public/assets/img/work-process/work-process-1.png";
-import image2 from "../../../../public/assets/img/work-process/work-process-2.png";
-import Count from "../../common/count";
+import Link from "next/link";
 
-const WorkArea = () => {
+const WorkProcess = () => {
     return (
-        <div className="work-process-area__one section-padding" style={{backgroundImage: `url(${workBg.src})`}}>
+        <div className="work-process__two section-padding">
             <div className="container">
-                <div className="row align-items-end work-process-area__one-title">
-                    <div className="col-xl-7 col-lg-7">
-                        <div className="work-process-area__one-content-left">
-                            <span className="subtitle-one">Work Process</span>
-                            <h2>Sustainable and Responsible Computing</h2>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 offset-xl-1 col-lg-4 offset-lg-1">
-                        <div className="work-process-area__one-content-right">
-                            <p>Discuss strategies for reducing energy consumption in data centers, personal devices, and reduce power usage</p>
+                <div className="row justify-content-center text-center">
+                    <div className="col-xl-6 col-lg-6 col-md-7">
+                        <div className="work-process__two-title">
+                            <span className="subtitle-one">The Process</span>
+                            <h2>Our Integration Systems</h2>
                         </div>
                     </div>
                 </div>
-                <div className="row justify-content-center gy-4">
-                    <div className="col-xl-6">
-                        <div className="work-process-area__one-single-work">
-                            <span>01</span>
-                            <div className="work-process-area__one-single-work-content">
-                                <h4>Assess Requirements Precisely</h4>
-                                <p>Begin by comprehensively understanding your business needs to ensure a perfect fit for tech solutions.</p>
+                <div className="work-process__two-cards">
+                    <div className="work-process__two-cards-single">
+                        <div className="work-process__two-cards-single-title">
+                            <div className="work-process__two-cards-single-title-left">
+                                <span>01.</span>
+                                <h4>IT Consulting</h4>
+                            </div>
+                            <div className="work-process__two-cards-single-title-right">
+                                <i className="flaticon-laptop-1"></i>
                             </div>
                         </div>
-                        <div className="work-process-area__one-single-work">
-                            <span>02</span>
-                            <div className="work-process-area__one-single-work-content">
-                                <h4>Develop Custom Solutions</h4>
-                                <p>Engage in crafting tailor-made software designed meticulously to align with your specific targets.</p>
-                            </div>
-                        </div>
-                        <div className="work-process-area__one-single-work">
-                            <span>03</span>
-                            <div className="work-process-area__one-single-work-content">
-                                <h4>Implement and Support</h4>
-                                <p>Seamlessly integrate the new systems into framework with ongoing support for continual optimization.</p>
+                        <p>Sdipiscing elit. Sed sit amet rcus nunc her it goes most beautiful</p>
+                        <Link href="/about" className="btn-three">read more<i className="fas fa-chevron-right"></i></Link>
+                        <div className="card-arrow-wrapper">
+                            <div className="card-arrow-ingredient">
+                                <div className="arrow-body"></div>
+                                <div className="arrow-head"></div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-6">
-                        <div className="work-process-area__one-right-img">
-                            <img src={image1.src} alt="image" />
-                        </div>
-                        <div className="work-process-area__one-right-counter-img">
-                            <div className="img-counter">
-                                <div className="counter-only">
-                                    <h2 className="counter"><Count number={20}/></h2>
-                                    <h2>+</h2>
-                                </div>
-                                <span>years of experiences</span>
+                    <div className="work-process__two-cards-single">
+                        <div className="work-process__two-cards-single-title">
+                            <div className="work-process__two-cards-single-title-left">
+                                <span>02.</span>
+                                <h4>Web Design</h4>
                             </div>
-                            <img src={image2.src} alt="image" />
+                            <div className="work-process__two-cards-single-title-right">
+                                <i className="flaticon-iphone-1"></i>
+                            </div>
                         </div>
+                        <p>Sdipiscing elit. Sed sit amet rcus nunc her it goes most beautiful</p>
+                        <Link href="/about" className="btn-three">read more<i className="fas fa-chevron-right"></i></Link>
+                        <div className="card-arrow-wrapper">
+                            <div className="card-arrow-ingredient">
+                                <div className="arrow-body"></div>
+                                <div className="arrow-head"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="work-process__two-cards-single">
+                        <div className="work-process__two-cards-single-title">
+                            <div className="work-process__two-cards-single-title-left">
+                                <span>03.</span>
+                                <h4>IT Support</h4>
+                            </div>
+                            <div className="work-process__two-cards-single-title-right">
+                                <i className="flaticon-mobile-data"></i>
+                            </div>
+                        </div>
+                        <p>Sdipiscing elit. Sed sit amet rcus nunc her it goes most beautiful</p>
+                        <Link href="/about" className="btn-three">read more<i className="fas fa-chevron-right"></i></Link>
                     </div>
                 </div>
             </div>
@@ -65,4 +70,4 @@ const WorkArea = () => {
     );
 };
 
-export default WorkArea;
+export default WorkProcess;

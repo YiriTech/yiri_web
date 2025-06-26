@@ -14,11 +14,11 @@ import TestimonialThree from "./testimonial";
 import Work from "./work";
 import BlogThree from "./blog";
 
-const HomeThree = () => {
+const ThinTank = () => {
     return (
         <>
             <SEO pageTitle="Cloud Computing" />
-            <HeaderThree  />
+            <HeaderThree variant={""}  />
             <BannerThree />
             <ServicesThree />
             <TextSlide />
@@ -35,4 +35,4 @@ const HomeThree = () => {
     );
 };
 
-export default HomeThree;
+export default ThinTank;

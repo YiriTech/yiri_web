@@ -29,13 +29,13 @@ const HeaderTwo = ({variant}:{variant:string}) => {
                 <div className="row">
                     <div className="col-xl-5 col-md-5">
                         <div className="top__bar-right">
-                        <Link href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>6391 Elgin St. Celina, 10299</Link>
+                        <Link href="https://www.google.com/maps"><i className="fas fa-map-marker-alt"></i>Rabat, Maroc</Link>
                         </div>
                     </div>
                     <div className="col-xl-7 col-md-7">
                         <div className="top__bar-left">
-                            <span><i className="fas fa-clock"></i>Working Hours : 10AM - 08PM</span>
-                            <Link href="mailto:info@example.com"><i className="fas fa-envelope"></i>info@example.com</Link>
+                            <span><i className="fas fa-clock"></i>Heure: 10AM - 08PM</span>
+                            <Link href="mailto:contact@yiri.com"><i className="fas fa-envelope"></i>contact@yiri.com</Link>
                         </div>
                     </div>
                 </div>

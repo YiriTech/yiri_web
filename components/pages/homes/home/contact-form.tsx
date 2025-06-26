@@ -12,8 +12,8 @@ const ContactForm = () => {
                     <div className="row align-items-end gy-4 justify-content-between">
                         <div className="col-xl-6">
                             <div className="contact__one-title">
-                                <span className="subtitle-one">Sent Now</span>
-                                <h2>Igniting the IT Potential</h2>
+                                <span className="subtitle-one">Rejoignez-nous</span>
+                                <h2>Réveillez Le Potentiel Tech Africain</h2>
                             </div>
                             <form action="#" className="contact__one-form">
                                 <div className="contact__one-form-top">
@@ -21,7 +21,7 @@ const ContactForm = () => {
                                     <input type="text" placeholder="Your Phone..." />
                                 </div>
                                 <input type="email" placeholder="Your E-mail..." className="w-100" />
-                                <button type="submit" className="btn-two w-100">Sent Now
+                                <button type="submit" className="btn-two w-100">Envoyer maintenant
                                     <i className="fas fa-chevron-right"></i>
                                 </button>
                             </form>
@@ -41,7 +41,7 @@ const ContactForm = () => {
                                                 <h3 className="counter"><Count number={10}/></h3>
                                                 <h3>+</h3>
                                             </div>
-                                            <span>years of experiences</span>
+                                            <span>Année</span>
                                         </div>
                                     </div>
                                 </div>

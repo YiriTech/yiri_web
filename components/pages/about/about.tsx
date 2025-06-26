@@ -7,8 +7,8 @@ import about1 from "../../../public/assets/img/about/about-1.png";
 import about2 from "../../../public/assets/img/about/about-2.png";
 import Link from "next/link";
 import Count from "../common/count";
-import WorkArea from "../homes/home/work";
-import Testimonial from "../homes/home/testimonial";
+import WorkArea from "../homes/academy/work";
+import Testimonial from "../homes/academy/testimonial";
 
 
 const AboutMain = () => {

@@ -1,9 +1,9 @@
-import HomeFive from "@/components/pages/homes/home-5";
+import ThinTank from "@/components/pages/homes/thinktank";
 
 const HomeFivePage = () => {
     return (
         <>
-            <HomeFive />
+            <ThinTank />
         </>
     );
 };

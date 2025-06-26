@@ -7,10 +7,10 @@ const MainMenu = () => {
                 <li className="menu-item-has-children">
                     <Link href="/">Accueil<i className="fas fa-angle-down"></i></Link>
                     <ul className="sub-menu">
-                        <li><Link href="/home-two">Yiri Academey</Link></li>
-                        <li><Link href="/home-three">Yiri Think tank</Link></li>
-                        <li><Link href="/home-four">Yiri Conferences</Link></li>
-                        <li><Link href="/home-five">Yiri Digital</Link></li>
+                        <li><Link href="/yiri/academy">Yiri Academey</Link></li>
+                        <li><Link href="/yiri/thinktank">Yiri Think tank</Link></li>
+                        <li><Link href="/yiri/conference">Yiri Conferences</Link></li>
+                        <li><Link href="/yiri/digital">Yiri Digital</Link></li>
                     </ul>
                 </li>
                 <li className="menu-item-has-children"><Link href="#">Pages <i className="fas fa-angle-down"></i></Link>

@@ -10,7 +10,7 @@ const AboutUs = () => {
     return (
       <>
         <SEO pageTitle="About Us" />
-        <HeaderOne />
+        <HeaderOne variant="" />
         <BreadCrumb title="About Us" innerTitle="Company About" />
         <AboutMain />
         <FooterOne />        

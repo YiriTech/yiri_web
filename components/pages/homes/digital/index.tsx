@@ -12,12 +12,12 @@ import BlogFive from "./blog";
 import FooterFive from "@/components/layout/footers/footer-five";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
 
-const HomeFive = () => {
+const Digital = () => {
 
     return (
         <div>
-            <SEO pageTitle='Software Solutions' />
-            <HeaderFive />
+            <SEO pageTitle='Yiri Digital' />
+            <HeaderFive variant={""} />
             <BannerFive />
             <AboutFive />
             <WorkAreaFive />
@@ -32,4 +32,4 @@ const HomeFive = () => {
     );
 };
 
-export default HomeFive;
+export default Digital;

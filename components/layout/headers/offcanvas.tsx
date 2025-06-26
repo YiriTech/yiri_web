@@ -2,7 +2,10 @@ import Link from 'next/link';
 import logo2 from "../../../public/assets/img/logo-2.png";
 import Social from '@/components/data/social';
 
-const SideBar = ({ isOpen, setIsOpen }) => {
+const SideBar = ({ isOpen, setIsOpen }:{
+	isOpen: boolean
+	, setIsOpen:(isOpen:boolean)=>void
+}) => {
     return (
         <>
             <div className={`header__area-menubar-right-sidebar-popup ${isOpen ? 'active' : ''}`}>
