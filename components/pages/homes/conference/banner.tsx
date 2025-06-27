@@ -18,8 +18,8 @@ const BannerFour = () => {
                                     <div className="banner__four-content-call">
                                         <i className="flaticon-telephone-call"></i>
                                         <div className="banner__four-content-call-right">
-                                            <span>Make a call</span>
-                                            <Link href="tel:(307)%20555-0133">(307) 555-0133</Link>
+                                            <span>Faire Appel</span>
+                                            <Link href="tel:(307)%20555-0133">(06) 84499227</Link>
                                         </div>
                                     </div>
                                 </div>

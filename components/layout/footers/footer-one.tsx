@@ -39,7 +39,7 @@ const FooterOne = () => {
 										</div>
 										<div className="footer__two-widget-about-location-item-info">
 											<span>Phone Number</span>
-											<Link href="tel:(307)555-0133">(307) 555-0133</Link>
+											<Link href="tel:(307)555-0133">(06) 84499227</Link>
 										</div>
 									</div>
 								</div>

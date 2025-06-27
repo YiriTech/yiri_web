@@ -73,8 +73,8 @@ const HeaderTwo = ({variant}:{variant:string}) => {
                             <div className="header__area-menubar-right-box-help">
                                 <i className="flaticon-phone-call"></i>
                                 <div className="header__area-menubar-right-box-help-info">
-                                    <span>Make a call</span>
-                                    <Link href="tel:(307)555-0133">(307) 555-0133</Link>
+                                    <span>Faire Appel</span>
+                                    <Link href="tel:(307)555-0133">(06) 84499227</Link>
                                 </div>
                             </div>
                         <div className="header__area-menubar-right-responsive-menu menu__bar">

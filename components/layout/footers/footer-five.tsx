@@ -78,8 +78,8 @@ const FooterFive = () => {
 										<i className="flaticon-telephone-call"></i>
 									</div>
 									<div className="footer__five-widget-location-item-info email">
-										<span>Make a call</span>
-										<Link href="tel:+09(307)555-0133">+09 (307) 555-0133</Link>
+										<span>Faire Appel</span>
+										<Link href="tel:+09(307)555-0133">+212 684499227</Link>
 									</div>
 								</div>
 							</div>
