@@ -1,48 +1,45 @@
-/*==========================================================================
-* Yiri Africa Color CSS
-==========================================================================*/
-:root {
+/* ==========================================================================
+ * Yiri Africa - Nouvelle Palette de Couleurs
+ ========================================================================== */
+ :root {
     --body-font: 'Space Grotesk', sans-serif;
     --heading-font: 'Space Grotesk', sans-serif;
+  
+    /* === Neutres === */
     --text-white: #FFFFFF;
     --bg-white: #FFFFFF;
     --btn-white: #FFFFFF;
     --border-white: #FFFFFF;
     --black: #000000;
-    --primary-color-1: #003091;
-    --primary-color-2: #F8E559;
-    --primary-color-3: #002095;
-    --bg-heading-color: #051634;
-    --text-heading-color: #051634;
-    --btn-heading-color: #131313;
-    --body-color: #343434;
-    --dark-one: #1C1E22;
-    --dark-two: #222429;
-    --color-1: #F4F7FB;
-    --color-2: #737373;
-    --color-3: #002060;
-    --color-4: #CCCCCC;
-    --color-5: #12223e; 
-    --color-6: #864af942;
-    --color-7: #07204D;
-    // --color-8: #E8E8E8;
-    // --color-9: #F2F6F9;
-    // --color-10: #ECECEC;                  
-    // --color-11: #2B2B2B;
-    // --color-12: #FEE3BF;
-    // --color-13: #CFCFCF;
-    // --color-14: #FDC67E;
-    // --color-15: #ACBDF8;
-    // --color-16: #E1E1E1;
-    // --color-17: #feedea;
-    // --color-18: #151718;
-    // --color-19: #3B3838;
-    // --color-20: #808287;
-    // --color-21: rgba(34, 36, 41, 0.5);
-    --border-color-1: #E7E7E7;
-    --border-color-2: #E9E9E8;
-    --border-color-3: rgba(19, 19, 19, 0.1);
-    --border-color-4: rgba(19, 19, 19, 0.06);;
+    --body-color: #2E2E2E;
+  
+    /* === Couleurs primaires === */
+    --primary-color-1: #2D8BBA;     /* principal */
+    --primary-color-2: #58B2D6;     /* clair */
+    --primary-color-3: #1A648B;     /* foncé */
+  
+    /* === Texte & Titres === */
+    --bg-heading-color: #042C47;
+    --text-heading-color: #042C47;
+    --btn-heading-color: #0F3D5F;
+  
+    /* === Couleurs complémentaires === */
+    --color-1: #F2F9FC;             /* background doux */
+    --color-2: #6B7280;             /* gris pour paragraphes */
+    --color-3: #145374;             /* bleu profond */
+    --color-4: #D1D5DB;             /* gris clair */
+    --color-5: #0B1F2B;             /* très foncé pour contraste */
+    --color-6: #DFF6FF;             /* bleu pastel */
+    --color-7: #084C61;             /* accent sombre */
+  
+    /* === Bordures === */
+    --border-color-1: #E5E7EB;
+    --border-color-2: #F3F4F6;
+    --border-color-3: rgba(0, 0, 0, 0.1);
+    --border-color-4: rgba(0, 0, 0, 0.05);
+  
+    /* === Ombres === */
     --box-shadow-1: 0px 25px 70px rgba(0, 0, 0, 0.08);
     --box-shadow-2: 0px 10px 70px rgba(0, 0, 0, 0.1);
-}
+  }
+  
