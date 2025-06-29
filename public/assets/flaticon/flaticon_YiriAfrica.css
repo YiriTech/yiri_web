@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "flaticon_bantec";
-  src: url("./flaticon_bantec.woff2?14164428dd7751f4c89e1bd0dd0324df") format("woff2"), url("./flaticon_bantec.woff?14164428dd7751f4c89e1bd0dd0324df") format("woff"), url("./flaticon_bantec.eot?14164428dd7751f4c89e1bd0dd0324df#iefix") format("embedded-opentype"), url("./flaticon_bantec.ttf?14164428dd7751f4c89e1bd0dd0324df") format("truetype"), url("./flaticon_bantec.svg?14164428dd7751f4c89e1bd0dd0324df#flaticon_bantec") format("svg");
+  font-family: "flaticon_YiriAfrica";
+  src: url("./flaticon_YiriAfrica.woff2?14164428dd7751f4c89e1bd0dd0324df") format("woff2"), url("./flaticon_YiriAfrica.woff?14164428dd7751f4c89e1bd0dd0324df") format("woff"), url("./flaticon_YiriAfrica.eot?14164428dd7751f4c89e1bd0dd0324df#iefix") format("embedded-opentype"), url("./flaticon_YiriAfrica.ttf?14164428dd7751f4c89e1bd0dd0324df") format("truetype"), url("./flaticon_YiriAfrica.svg?14164428dd7751f4c89e1bd0dd0324df#flaticon_YiriAfrica") format("svg");
 }
 i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
-  font-family: flaticon_bantec !important;
+  font-family: flaticon_YiriAfrica !important;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -371,4 +371,4 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
 
 .flaticon-content-marketing:before {
   content: "\f15a";
-}/*# sourceMappingURL=flaticon_bantec.css.map */
+}/*# sourceMappingURL=flaticon_YiriAfrica.css.map */

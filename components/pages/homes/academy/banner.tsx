@@ -19,8 +19,8 @@ const BannerOne = () => {
                     <div className="row align-items-center gy-4 justify-content-center">
                         <div className="col-xl-6 col-lg-6">
                             <div className="banner__one-content">
-                                <span className="subtitle-one">L'avenir de la jeunesse</span>
-                                <h2>La Tech au service de la Renaissance <span>Africaine</span></h2>
+                                <span className="subtitle-one">Yiri Academy</span>
+                                <h2>Avec <span>Yiri Academy</span> la tech au service de la renaissance africaine</h2>
                                 <p>Un mot d’ordre fort, qui reflète l’ambition d’une jeunesse formée, engagée et actrice du changement.</p>
                                 <Link href="/services" className="btn-two">Découvrir
                                     <i className="fas fa-arrow-right"></i>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import logo from "../../../public/assets/img/logo-2.png";
 import servicesData from "@/components/data/services-data";
 import Social from "@/components/data/social";
+import Logo from "../logo";
 
 const FooterThree = () => {
     return (
@@ -9,7 +10,7 @@ const FooterThree = () => {
         <div className="footer__three">
             <div className="container pt-80 pb-80">
                 <div className="footer__three-top">
-                    <h3>Join Our Social Community!</h3>
+                    <h3>Rejoignez notre communauté sociale!</h3>
                     <div className="footer__three-top-social">
                         <Social />
                     </div>
@@ -18,10 +19,10 @@ const FooterThree = () => {
                     <div className="col-xl-3 col-md-6 col-sm-7 xl-mb-30">
                         <div className="footer__three-widget">
                             <div className="footer__three-widget-about">
-                                <Link href="/"><img src={logo.src} alt="image" /></Link>
-                                <p>Financial planners help people to gain knowledge about</p>
+                                <Logo />
+                                <p>Les experts en informatique et en sciences des données</p>
                                 <form action="#">
-                                    <input type="text" name="email" placeholder="Your e-mail" required="" />
+                                    <input type="text" name="email" placeholder="Votre email"  />
                                     <button type="submit"><i className="fas fa-paper-plane"></i></button>
                                  </form>
                             </div>
@@ -29,7 +30,7 @@ const FooterThree = () => {
                     </div>
                     <div className="col-xl-3 col-md-6 col-sm-5 sm-mb-30">
                         <div className="footer__three-widget border-one">
-                            <h4 className="ml-60">Our Services</h4>
+                            <h4 className="ml-60">Nos Services</h4>
                             <div className="footer__three-widget-solution">
                                 <ul>
 									{servicesData.slice(0, 4).map((data, id) => {
@@ -45,7 +46,7 @@ const FooterThree = () => {
                     </div>
                     <div className="col-xl-3 col-md-6 col-sm-5 sm-mb-30">
                         <div className="footer__three-widget border-one">
-                            <h4 className="ml-60">Resources​</h4>
+                            <h4 className="ml-60">Ressources​</h4>
                             <div className="footer__three-widget-solution">
                                 <ul>
 									<li><Link href="services"><i className="far fa-chevron-double-right"></i>Service</Link></li>
@@ -58,7 +59,7 @@ const FooterThree = () => {
                     </div>
                     <div className="col-xl-3 col-md-6 col-sm-6 sm-mb-30">
                         <div className="footer__three-widget border-one">
-                            <h4>Contact</h4>
+                            <h4>Contactez-nous</h4>
                             <div className="footer__three-widget-location">
                                 <div className="footer__three-widget-location-item">
                                     <div className="footer__three-widget-location-item-icon">
@@ -66,7 +67,7 @@ const FooterThree = () => {
                                     </div>
                                     <div className="footer__three-widget-location-item-info email">
                                         <span>Email</span>
-                                        <Link href="mailto:helpinfo@gmail.com">helpinfo@gmail.com</Link>
+                                        <Link href="mailto:helpinfo@gmail.com">info@yiri.com</Link>
                                     </div>
                                 </div>
                                 <div className="footer__three-widget-location-item">
@@ -74,8 +75,8 @@ const FooterThree = () => {
                                         <i className="flaticon-location"></i>
                                     </div>
                                     <div className="footer__three-widget-location-item-info">
-                                        <span>Address</span>
-                                        <Link href="https://google.com/maps">321 Data Drive, Cloud City, WA 67890</Link>
+                                        <span>Adresse</span>
+                                        <Link href="https://google.com/maps">123 Rue de la Paix, Paris, France</Link>
                                     </div>
                                 </div>
                             </div>
@@ -88,13 +89,13 @@ const FooterThree = () => {
                     <div className="row justify-content-between copyright__one-container-area">
                         <div className="col-xl-5 col-lg-6"> 
                             <div className="copyright__one-left">
-                                <p>© ThemeOri  2024 | All Rights Reserved</p>
+                                <p>© Yiri  2025 | Tous droits réservés</p>
                             </div>
                         </div>
                         <div className="col-xl-5 col-lg-6">
                             <div className="copyright__one-right">
-                                <Link href="/about">Privacy Policy</Link>
-                                <Link href="/contact">Contact Us</Link>
+                                <Link href="/about">Politique de confidentialité</Link>
+                                <Link href="/contact">Contactez-nous</Link>
                             </div>
                         </div>
                     </div>

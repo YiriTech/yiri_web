@@ -7,8 +7,8 @@ const WorkProcess = () => {
                 <div className="row justify-content-center text-center">
                     <div className="col-xl-6 col-lg-6 col-md-7">
                         <div className="work-process__two-title">
-                            <span className="subtitle-one">The Process</span>
-                            <h2>Our Integration Systems</h2>
+                            <span className="subtitle-one">Nos activités</span>
+                            <h2>Nos domaines d'activités</h2>
                         </div>
                     </div>
                 </div>
@@ -17,14 +17,14 @@ const WorkProcess = () => {
                         <div className="work-process__two-cards-single-title">
                             <div className="work-process__two-cards-single-title-left">
                                 <span>01.</span>
-                                <h4>IT Consulting</h4>
+                                <h4>Conférences</h4>
                             </div>
                             <div className="work-process__two-cards-single-title-right">
                                 <i className="flaticon-laptop-1"></i>
                             </div>
                         </div>
-                        <p>Sdipiscing elit. Sed sit amet rcus nunc her it goes most beautiful</p>
-                        <Link href="/about" className="btn-three">read more<i className="fas fa-chevron-right"></i></Link>
+                        <p>Nous organisons des conférences et des ateliers pour partager nos connaissances et nos expériences.</p>
+                        <Link href="/about" className="btn-three">En savoir plus<i className="fas fa-chevron-right"></i></Link>
                         <div className="card-arrow-wrapper">
                             <div className="card-arrow-ingredient">
                                 <div className="arrow-body"></div>
@@ -36,14 +36,14 @@ const WorkProcess = () => {
                         <div className="work-process__two-cards-single-title">
                             <div className="work-process__two-cards-single-title-left">
                                 <span>02.</span>
-                                <h4>Web Design</h4>
+                                <h4>Formation</h4>
                             </div>
                             <div className="work-process__two-cards-single-title-right">
                                 <i className="flaticon-iphone-1"></i>
                             </div>
                         </div>
-                        <p>Sdipiscing elit. Sed sit amet rcus nunc her it goes most beautiful</p>
-                        <Link href="/about" className="btn-three">read more<i className="fas fa-chevron-right"></i></Link>
+                            <p>Nous offrons des formations en informatique et en sciences des données pour les entreprises et les particuliers.</p>
+                        <Link href="/about" className="btn-three">En savoir plus<i className="fas fa-chevron-right"></i></Link>
                         <div className="card-arrow-wrapper">
                             <div className="card-arrow-ingredient">
                                 <div className="arrow-body"></div>
@@ -55,14 +55,14 @@ const WorkProcess = () => {
                         <div className="work-process__two-cards-single-title">
                             <div className="work-process__two-cards-single-title-left">
                                 <span>03.</span>
-                                <h4>IT Support</h4>
+                                <h4>Réflexion et Innovation</h4>
                             </div>
                             <div className="work-process__two-cards-single-title-right">
                                 <i className="flaticon-mobile-data"></i>
                             </div>
                         </div>
-                        <p>Sdipiscing elit. Sed sit amet rcus nunc her it goes most beautiful</p>
-                        <Link href="/about" className="btn-three">read more<i className="fas fa-chevron-right"></i></Link>
+                            <p>Nous réfléchissons à des sujets de société et de politique pour les entreprises et les particuliers et nous innovons dans ces domaines.</p>
+                        <Link href="/about" className="btn-three">En savoir plus<i className="fas fa-chevron-right"></i></Link>
                     </div>
                 </div>
             </div>

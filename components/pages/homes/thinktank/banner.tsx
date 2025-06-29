@@ -26,10 +26,10 @@ const BannerThree = () => {
                             <div className="row justify-content-center">
                                 <div className="col-xl-10">
                                     <div className="banner__three-content">
-                                        <span className="subtitle-one">Digital Growth</span>
-                                        <h2>Empowering Organizations through <span className="text-bordered">Tech</span>nology</h2>
-                                        <p>Lorem ipsum dolor sit amet, conse ct etur adipiscing elit. Sed sit amet rcus nunc. Duis egestas ac ante sed tincidun</p>
-                                        <Link href="/about" className="btn-two">Read More<i className="fas fa-arrow-right"></i></Link>
+                                        <span className="subtitle-one">Yiri Think Tank</span>
+                                        <h2>Avec <span className="text-bordered">Yiri Think Tank</span> on réfléchit sur la tech et la renaissance africaine</h2>
+                                            <p>Parceque la tech est un facteur de changement, on a besoin de la tech pour la renaissance africaine</p>
+                                        <Link href="/about" className="btn-two">Lire plus<i className="fas fa-arrow-right"></i></Link>
                                     </div>
                                 </div>
                             </div>
@@ -43,10 +43,10 @@ const BannerThree = () => {
                             <div className="row justify-content-center">
                                 <div className="col-xl-10">
                                     <div className="banner__three-content">
-                                        <span className="subtitle-one">Digital Growth</span>
-                                        <h2>Driving Cutting Edge Innovations</h2>
-                                        <p>Explore the visionary ideas and groundbreaking advancements propelling technology forward. Experience the power of innovation</p>
-                                        <Link href="/about" className="btn-two">Read More<i className="fas fa-arrow-right"></i></Link>
+                                        <span className="subtitle-one">Yiri Think Tank</span>
+                                        <h2>Un <span className="text-bordered">think tank</span> pour la tech et la renaissance africaine</h2>
+                                        <p>Renforcer la capacité de la jeunesse</p>
+                                        <Link href="/about" className="btn-two">Lire plus<i className="fas fa-arrow-right"></i></Link>
                                     </div>
                                 </div>
                             </div>

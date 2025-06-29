@@ -4,11 +4,11 @@ import Link from 'next/link';
 const yiriTeamData = [
   {
     id: 1,
-    name: "François Mansaré",
-    position: "Ingénieur Digital pour la Finance",
-    description: "Spécialiste en transformation numérique des systèmes économiques africains",
+    name: "Sidy Mohamed Salim Diallo",
+    position: "Data & Software Engineer",
+    description: "Spécialiste en Data IA & Software, entrepreneur, et cofondateur de Yiri Tech Africa",
     image: {
-      src: "../../../../public/assets/img/team/francois-mansare.jpg" // À remplacer par la vraie image
+      src: "/assets/img/team/salim-diallo.jpg" // À remplacer par la vraie image
     },
     social_link: [
       {
@@ -29,12 +29,13 @@ const yiriTeamData = [
     ]
   },
   {
+    
     id: 2,
-    name: "Sidy Mohamed Salim Diallo",
-    position: "Data & Software Engineer",
-    description: "Expert en développement d'outils concrets à fort impact local",
+    name: "François Mansaré",
+    position: "Ingénieur Digital pour la Finance",
+    description: "Spécialiste en transformation numérique des systèmes économiques africains, et cofondateur de Yiri Tech Africa",
     image: {
-      src: "../../../../public/assets/img/team/sidy-diallo.jpg" // À remplacer par la vraie image
+        src: "/assets/img/team/francois-mansare.jpg" // À remplacer par la vraie image
     },
     social_link: [
       {
@@ -53,7 +54,8 @@ const yiriTeamData = [
         target: "_blank"
       }
     ]
-  }
+  },
+ 
 ];
 
 const Team = () => {

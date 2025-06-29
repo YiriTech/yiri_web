@@ -37,8 +37,8 @@ const slideControl = {
                 <div className="row justify-content-center text-center">
                     <div className="col-xl-7 col-lg-6 col-md-7">
                         <div className="testimonial__two-title">
-                            <span className="subtitle-one">Praise & Feedback</span>
-                            <h2>Customer Experiences</h2>
+                                <span className="subtitle-one">Témoignages</span>
+                            <h2>Nos partenaires</h2>
                         </div>
                     </div>
                 </div>
@@ -53,11 +53,11 @@ const slideControl = {
                                 <div className="single-slider">
                                     <div className="single-slider-user">
                                         <div className="single-slider-user-name">
-                                            <h4>Nasir Al Shakib</h4>
-                                            <span>Content Creator</span>
+                                            <h4>Moussa Diallo</h4>
+                                            <span>Directeur de l'Ecole Supérieure de Technologie de la Banque Mondiale</span>
                                         </div>
                                     </div>
-									<p>Their product exceeded his my ro expectationsa  The the quality and attention to  moutstandin an  and it has become an essential active</p>
+									<p>Leur produit a dépassé mes attentes. La qualité et l'attention à la détail sont remarquables et il a devenu un actif essentiel.</p>
                                     <div className="single-slider-user-rating mt-30">
                                         <i className="fas fa-star"></i>
                                         <i className="fas fa-star"></i>
@@ -71,11 +71,11 @@ const slideControl = {
                                 <div className="single-slider">
                                     <div className="single-slider-user">
                                         <div className="single-slider-user-name">
-                                            <h4>Devon Lane</h4>
-                                            <span>Marketing</span>
-                                        </div>
+                                            <h4>Moussa Diallo</h4>
+                                            <span>Directeur de l'Ecole Supérieure de Technologie de la Banque Mondiale</span>
+                                            </div>
                                     </div>
-									<p>Their product exceeded his my ro expectationsa  The the quality and attention to  moutstandin an  and it has become an essential active</p>
+									<p>Leur produit a dépassé mes attentes. La qualité et l'attention à la détail sont remarquables et il a devenu un actif essentiel.</p>
                                     <div className="single-slider-user-rating mt-30">
                                         <i className="fas fa-star"></i>
                                         <i className="fas fa-star"></i>

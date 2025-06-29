@@ -10,37 +10,37 @@ const TextSlide = () => {
                             <div className="text-slide">
                                 <div className="sliders scroll">
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>IT Training</h3>
+                                        <h3>Formation</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-satellite-signal"></i>
                                         </div>
                                     </div>
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>Data Science</h3>
+                                        <h3>Conférences</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-satellite-signal"></i>
                                         </div>
                                     </div>
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>IT Training</h3>
+                                        <h3>Réflexion</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-radio-tower"></i>
                                         </div>
                                     </div>
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>Digital Marketing</h3>
+                                        <h3>Recherche</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-satellite-signal"></i>
                                         </div>
                                     </div>
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>IT Strategy</h3>
+                                        <h3>Consulting</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-radio-tower"></i>
                                         </div>
                                     </div>
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>Software Testing</h3>
+                                        <h3>Innovation</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-cloud-storage"></i>
                                         </div>
@@ -48,37 +48,37 @@ const TextSlide = () => {
                                 </div>
                                 <div className="sliders scroll">
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>IT Training</h3>
+                                        <h3>Recherche</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-satellite-signal"></i>
                                         </div>
                                     </div>
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>Data Science</h3>
+                                        <h3>Consulting</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-satellite-signal"></i>
                                         </div>
                                     </div>
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>IT Training</h3>
+                                        <h3>Innovation</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-radio-tower"></i>
                                         </div>
                                     </div>
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>Digital Marketing</h3>
+                                        <h3>Recherche</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-satellite-signal"></i>
                                         </div>
                                     </div>
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>IT Strategy</h3>
+                                        <h3>Consulting</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-radio-tower"></i>
                                         </div>
                                     </div>
                                     <div className="horizontal-scroll-single-item">
-                                        <h3>Software Testing</h3>
+                                        <h3>Innovation</h3>
                                         <div className="horizontal-scroll-icon">
                                             <i className="flaticon-cloud-storage"></i>
                                         </div>

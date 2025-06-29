@@ -7,6 +7,7 @@ import logo1 from "../../../../public/assets/img/logo-1.png";
 import logo2 from "../../../../public/assets/img/logo-2.png";
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import Link from 'next/link';
+import Logo from '../../logo';
 
 const HeaderTwo = ({variant}:{variant:string}) => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -46,7 +47,7 @@ const HeaderTwo = ({variant}:{variant:string}) => {
                 <div className="header__area-menubar">
                     <div className="header__area-menubar-left">
                         <div className="header__area-menubar-left-logo">
-                            <Link href="/"><img src={logo1.src} alt="logo" /></Link>
+                         <Logo />
                         </div>
                     </div>
                     <div className="header__area-menubar-center">

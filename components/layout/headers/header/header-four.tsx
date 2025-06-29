@@ -2,12 +2,12 @@
 import Link from 'next/link';
 import MainMenu from '../header-menu';
 import { useEffect, useState } from 'react';
-import logo1 from "../../../../public/assets/img/logo-1.png";
 import logo2 from "../../../../public/assets/img/logo-2.png";
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import Search from '../search';
+import Logo from '../../logo';
 
-const HeaderFour = ({variant}) => {
+const HeaderFour = ({variant}:{variant:string}) => {
     const [menuSidebar, setMenuSidebar] = useState(false);
     const [search, setSearch] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
@@ -44,7 +44,7 @@ const HeaderFour = ({variant}) => {
             <div className="header__area-menubar">
                 <div className="header__area-menubar-left">
                     <div className="header__area-menubar-left-logo">
-                        <Link href="/"><img src={logo1.src} alt="logo" /></Link>
+                        <Logo />
                     </div>
                 </div>
 				<div className="header__area-menubar-center">
@@ -73,7 +73,7 @@ const HeaderFour = ({variant}) => {
         </div>
         </div>
         <MobileMenuPopup isOpen={menuSidebar} setIsOpen={setMenuSidebar} popupLogo={logo2} />
-        <Search isOpen={search} setIsOpen={setSearch} />
+        <Search isOpen={search} setIsOpen={setSearch} addClass={""} />
         </>
     );
 };

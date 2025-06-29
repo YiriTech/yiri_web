@@ -8,8 +8,8 @@ const BlogTwo = () => {
                 <div className="row justify-content-center text-center">
                     <div className="col-xl-6 col-lg-6 col-md-8 col-sm-9">
                         <div className="blog__two-title">
-                            <span className="subtitle-one">Blog And news</span>
-                            <h2>Cloud productivity IT expertise</h2>
+                                <span className="subtitle-one">Blog et actualités</span>
+                            <h2>Nos actualités</h2>
                         </div>
                     </div>
                 </div>
@@ -26,11 +26,11 @@ const BlogTwo = () => {
                                 </div>
                                 <div className="blog__two-single-blog-content">
                                     <div className="blog__two-single-blog-content-top">
-                                        <span><i className="far fa-user"></i>by Admin</span>
-                                        <span><i className="far fa-comment-dots"></i>Comments ({data.comment})</span>
+                                            <span><i className="far fa-user"></i>Par {data.name}</span>
+                                        <span><i className="far fa-comment-dots"></i>Commentaires ({data.comment})</span>
                                     </div>
                                     <Link href={`/blog/${data.id}`} className="blog__two-single-blog-content-title">{data.title}</Link>
-                                    <Link className="btn-three" href={`/blog/${data.id}`}>Read More<i className="fas fa-chevron-right"></i></Link> 
+                                        <Link className="btn-three" href={`/blog/${data.id}`}>En savoir plus<i className="fas fa-chevron-right"></i></Link> 
                                 </div>
                             </div>
                         </div>

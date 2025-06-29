@@ -12,7 +12,7 @@ export default function RootLayout({ children }:Readonly<{
     return (
         <html lang="en">
             <head>
-                <link rel='icon' type='image/png' href='../favicon.ico' />
+                <link rel='icon' type='image/png' href='/favicon.ico' />
             </head>
             <body>
                 {children}

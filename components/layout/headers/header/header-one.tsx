@@ -3,7 +3,6 @@ import MainMenu from '../header-menu';
 import Search from '../search';
 import { useEffect, useState } from 'react';
 import SideBar from '../offcanvas';
-import logo1 from "../../../../public/assets/img/logo-1.png";
 import logo2 from "../../../../public/assets/img/logo-2.png";
 import MobileMenuPopup from '../mobile-menu/menu-area';
 import Link from 'next/link';

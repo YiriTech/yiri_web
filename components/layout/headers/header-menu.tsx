@@ -13,32 +13,16 @@ const MainMenu = () => {
                         <li><Link href="/yiri/digital">Yiri Digital</Link></li>
                     </ul>
                 </li>
-                <li className="menu-item-has-children"><Link href="#">Pages <i className="fas fa-angle-down"></i></Link>
-                    <ul className="sub-menu">
-                        <li><Link href="/about">A propos</Link></li>
-                        <li><Link href="/testimonial">Testimonials</Link></li>
-                        {/* <li><Link href="/pricing-plan">Pricing Plan</Link></li> */}
-                        <li><Link href="/faq">Faq</Link></li>
-                        <li className="menu-item-has-children"><Link href="#">Equipe<i className="fas fa-angle-right"></i></Link>
-                            <ul className="sub-menu">
-                                <li><Link href="/team">Team Style 01</Link></li>
-                                <li><Link href="/team-two">Team Style 02</Link></li>
-                            </ul>
-                        </li>
-                        <li><Link href="/request-quote">Request Quote</Link></li>
-                        <li><Link href="/404">404</Link></li>
-                    </ul>
-                </li>
-                <li className="menu-item-has-children"><Link href="/services">Visions
-                 {/* <i className="fas fa-angle-down"></i> */}
-                 </Link>
+                    <li className="menu-item-has-children"><Link href="/about">A propos</Link></li>
+                    <li className="menu-item-has-children"><Link href="/team">Equipe</Link></li>
+                <li className="menu-item-has-children"><Link href="/services">Services</Link></li>
                     {/* <ul className="sub-menu">
                         <li><Link href="/services">Vision</Link></li>
                         <li><Link href="/services-two">Services 02</Link></li>
                         <li><Link href="/services/data-analytics">Services Details</Link></li>
                     </ul> */}
-                </li>
-                <li className="menu-item-has-children"><Link href="/portfolio/2-columns">Evenements en Image 
+                
+                <li className="menu-item-has-children"><Link href="/portfolio/2-columns">Evenements 
                 {/* <i className="fas fa-angle-down"> </i> */}
                     </Link>
                     {/* <ul className="sub-menu">

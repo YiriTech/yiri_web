@@ -17,7 +17,7 @@ import ScrollToTop from "../../common/scroll/scroll-to-top";
 const Home = () => {
     return (
         <>
-            <SEO pageTitle="IT Consulting" />
+            <SEO pageTitle="Yiri Africa" />
             <HeaderTwo variant=""  />
             <BannerTwo />
             <AboutTwo />

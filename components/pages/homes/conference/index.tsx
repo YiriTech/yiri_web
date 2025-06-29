@@ -14,7 +14,7 @@ import ScrollToTop from "../../common/scroll/scroll-to-top";
 const Conferences = () => {
     return (
         <div>
-            <SEO pageTitle='Digital Business' />
+            <SEO pageTitle='Yiri Conference' />
             <HeaderFour variant={""} />
             <BannerFour />
             <AboutFour />

@@ -10,15 +10,15 @@ const BannerFour = () => {
                     <div className="row align-items-center gy-4 justify-content-center">
                         <div className="col-xl-6 col-lg-6">
                             <div className="banner__four-content">
-                                <span className="subtitle-two">Innovating The Future</span>
-                                <h2>Transforming Ideas into Reality</h2>
-                                <p>Showcases the company's ability to bring innovative concepts to life. Indicates a broader focus beyond just technical.</p>
+                                <span className="subtitle-two">Yiri Conference</span>
+                                <h2>Avec <span className="text-bordered text-primary">Yiri Conference</span> on transforme les idées en réalité</h2>
+                                <p>Des conferences pour eveler les talents et les nouvelles technologies</p>
                                 <div className="banner__four-content-bottom">
-                                    <Link href="/contact" className="btn-two">Apply Today<i className="fas fa-arrow-right"></i></Link>
+                                    <Link href="/contact" className="btn-two">S'inscrire<i className="fas fa-arrow-right"></i></Link>
                                     <div className="banner__four-content-call">
                                         <i className="flaticon-telephone-call"></i>
                                         <div className="banner__four-content-call-right">
-                                            <span>Faire Appel</span>
+                                            <span>Faire un appel</span>
                                             <Link href="tel:(307)%20555-0133">(06) 84499227</Link>
                                         </div>
                                     </div>

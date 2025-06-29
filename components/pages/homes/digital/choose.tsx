@@ -17,7 +17,7 @@ const Choose = () => {
                         <div className="why-choose-us__four-left">
                             <div className="why-choose-us__four-title">
                                 <span className="subtitle-one">Why Chose Us</span>
-                                <h2>Bantec Your Trusted IT Partner</h2>
+                                <h2>Yiri Africa Your Trusted IT Partner</h2>
                                 <p>Our expertise, we ensure your business stays ahead in the digital landscape, driving success and growth together</p>
                                 <div className="why-choose-us__four-progress-bar">
                                     <div className="why-choose-us__four-progress-bar-wrapper">
