@@ -10,16 +10,16 @@ const BannerFour = () => {
                     <div className="row align-items-center gy-4 justify-content-center">
                         <div className="col-xl-6 col-lg-6">
                             <div className="banner__four-content">
-                                <span className="subtitle-two">Yiri Conference</span>
-                                <h2>Avec <span className="text-bordered text-primary">Yiri Conference</span> on transforme les idées en réalité</h2>
-                                <p>Des conferences pour eveler les talents et les nouvelles technologies</p>
+                                <span className="subtitle-two">YIRI Conférences</span>
+                                <h2>Événements <span className="text-bordered text-primary">Tech</span> Accessibles Gratuitement</h2>
+                                <p>Organisation d'événements, panels et journées tech avec des invités africains et internationaux, accessibles gratuitement aux jeunes et étudiants.</p>
                                 <div className="banner__four-content-bottom">
-                                    <Link href="/contact" className="btn-two">S'inscrire<i className="fas fa-arrow-right"></i></Link>
+                                    <Link href="/contact" className="btn-two">S'inscrire à un Événement<i className="fas fa-arrow-right"></i></Link>
                                     <div className="banner__four-content-call">
                                         <i className="flaticon-telephone-call"></i>
                                         <div className="banner__four-content-call-right">
-                                            <span>Faire un appel</span>
-                                            <Link href="tel:(307)%20555-0133">(06) 84499227</Link>
+                                            <span>Nous contacter</span>
+                                            <Link href="tel:+212684499227">+212 6 84 49 92 27</Link>
                                         </div>
                                     </div>
                                 </div>

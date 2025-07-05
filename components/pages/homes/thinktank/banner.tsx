@@ -26,10 +26,10 @@ const BannerThree = () => {
                             <div className="row justify-content-center">
                                 <div className="col-xl-10">
                                     <div className="banner__three-content">
-                                        <span className="subtitle-one">Yiri Think Tank</span>
-                                        <h2>Avec <span className="text-bordered">Yiri Think Tank</span> on réfléchit sur la tech et la renaissance africaine</h2>
-                                            <p>Parceque la tech est un facteur de changement, on a besoin de la tech pour la renaissance africaine</p>
-                                        <Link href="/about" className="btn-two">Lire plus<i className="fas fa-arrow-right"></i></Link>
+                                        <span className="subtitle-one">YIRI Think Tank</span>
+                                        <h2>Influencer les <span className="text-bordered">Politiques Publiques</span> par la Recherche</h2>
+                                            <p>Production de notes de réflexion, rapports stratégiques et veille technologique africaine pour influencer les politiques publiques et les décideurs locaux.</p>
+                                        <Link href="/contact" className="btn-two">Consulter nos Rapports<i className="fas fa-arrow-right"></i></Link>
                                     </div>
                                 </div>
                             </div>
@@ -43,10 +43,10 @@ const BannerThree = () => {
                             <div className="row justify-content-center">
                                 <div className="col-xl-10">
                                     <div className="banner__three-content">
-                                        <span className="subtitle-one">Yiri Think Tank</span>
-                                        <h2>Un <span className="text-bordered">think tank</span> pour la tech et la renaissance africaine</h2>
-                                        <p>Renforcer la capacité de la jeunesse</p>
-                                        <Link href="/about" className="btn-two">Lire plus<i className="fas fa-arrow-right"></i></Link>
+                                        <span className="subtitle-one">YIRI Think Tank</span>
+                                        <h2>Veille <span className="text-bordered">Technologique</span> Africaine</h2>
+                                        <p>Dialogue avec les décideurs locaux et production de contenus stratégiques pour le développement numérique de l'Afrique.</p>
+                                        <Link href="/contact" className="btn-two">Rejoindre le Think Tank<i className="fas fa-arrow-right"></i></Link>
                                     </div>
                                 </div>
                             </div>

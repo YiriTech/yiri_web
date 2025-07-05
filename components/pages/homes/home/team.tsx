@@ -4,8 +4,8 @@ import Link from 'next/link';
 const yiriTeamData = [
   {
     id: 1,
-    name: "Sidy Mohamed Salim Diallo",
-    position: "Data & Software Engineer",
+    name: "Diallo Sidy Mohamed Salim",
+    position: "Ingénieur en Data & Software Engineering",
     description: "Spécialiste en Data IA & Software, entrepreneur, et cofondateur de Yiri Tech Africa",
     image: {
       src: "/assets/img/team/salim-diallo.jpg" // À remplacer par la vraie image
@@ -29,10 +29,9 @@ const yiriTeamData = [
     ]
   },
   {
-    
     id: 2,
     name: "François Mansaré",
-    position: "Ingénieur Digital pour la Finance",
+    position: "Ingénieur en Informatique & Économie Digitale pour la Finance",
     description: "Spécialiste en transformation numérique des systèmes économiques africains, et cofondateur de Yiri Tech Africa",
     image: {
         src: "/assets/img/team/francois-mansare.jpg" // À remplacer par la vraie image
@@ -55,7 +54,6 @@ const yiriTeamData = [
       }
     ]
   },
- 
 ];
 
 const Team = () => {

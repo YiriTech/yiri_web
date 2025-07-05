@@ -1,32 +1,30 @@
 "use client";
 import SEO from "@/components/data/seo";
-import HeaderFour from "@/components/layout/headers/header/header-four";
-import FooterFour from "@/components/layout/footers/footer-four";
-import BannerFour from "./banner";
-import AboutFour from "./about";
-import ServicesFour from "./services";
-import ChooseFour from "./choose";
-import Tab from "./tab/tab";
-import Video from "./video";
-import BlogFour from "./blog";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
+import HeaderOne from "@/components/layout/headers/header/header-one";
+import BannerFour from "./banner";
+import About from "./about";
+import Choose from "./choose";
+import Services from "./services";
+import Video from "./video";
+import FooterOne from "@/components/layout/footers/footer-one";
+import Blog from "./blog";
 
-const Conferences = () => {
+const Conference = () => {
     return (
         <div>
-            <SEO pageTitle='Yiri Conference' />
-            <HeaderFour variant={""} />
+            <SEO pageTitle='YIRI Conférences - Événements Tech en Afrique' />
+            <HeaderOne variant="" />
             <BannerFour />
-            <AboutFour />
-            <ServicesFour />
-            <ChooseFour />
-            <Tab />
+            <About />
+            <Choose />
+            <Services />
             <Video />
-            <BlogFour />
-            <FooterFour />
+            <Blog />
+            <FooterOne />
             <ScrollToTop />
         </div>
     );
 };
 
-export default Conferences;
+export default Conference;

@@ -1,13 +1,13 @@
 import { useState } from "react";
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 import image1 from "../../../../public/assets/img/skill/skill.png";
 import image2 from "../../../../public/assets/img/skill/skill-video-thumb.png";
 
 const SkillArea = () => {
-  const [openVideo, setOpenVideo] = useState(false);
-  const openVideoModal = () => {
-    setOpenVideo(true);
-  };
+  // const [openVideo, setOpenVideo] = useState(false);
+  // const openVideoModal = () => {
+  //   // setOpenVideo(true);
+  // };
 
   return (
     <>
@@ -17,13 +17,13 @@ const SkillArea = () => {
             <div className="col-xl-6 col-lg-6 col-md-11">
               <div className="skill-area__one-left">
                 <div className="skill-area__one-left-image">
-                  <img src={image1.src} alt="image" />
+                  <img src={image1.src} alt="image" className="rounded-lg" />
                 </div>
                 <div className="skill-area__one-left-video">
-                  <img src={image2.src} alt="image" />
-                  <div onClick={openVideoModal} className="video-popup skill-area__one-left-video-play-btn">
+                  <img src={image2.src} alt="image" className="rounded-2xl" />
+                  {/* <div onClick={openVideoModal} className="video-popup skill-area__one-left-video-play-btn">
                     <i className="fas fa-play"></i>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -36,7 +36,21 @@ const SkillArea = () => {
                 <div className="skill-area__one-right-skill-item">
                   <div className="skill-area__one-right-skill-item-content">
                     <div className="skill-area__one-right-skill-item-content-title">
-                      <span>Formation Tech</span>
+                      <span>Data & Intelligence Artificielle</span>
+                    </div>
+                    <div className="skill-area__one-right-skill-item-content-count">
+                      <span className="counter">95</span>%
+                    </div>
+                  </div>
+                  <div className="skill-area__one-right-skill-item-inner">
+                    <div className="skill-area__one-right-skill-item-bar" data-width="95"></div>
+                  </div>
+                </div>
+
+                <div className="skill-area__one-right-skill-item">
+                  <div className="skill-area__one-right-skill-item-content">
+                    <div className="skill-area__one-right-skill-item-content-title">
+                      <span>Développement Software</span>
                     </div>
                     <div className="skill-area__one-right-skill-item-content-count">
                       <span className="counter">90</span>%
@@ -50,7 +64,7 @@ const SkillArea = () => {
                 <div className="skill-area__one-right-skill-item">
                   <div className="skill-area__one-right-skill-item-content">
                     <div className="skill-area__one-right-skill-item-content-title">
-                      <span>Transformation Digitale</span>
+                      <span>Économie Digitale & Finance</span>
                     </div>
                     <div className="skill-area__one-right-skill-item-content-count">
                       <span className="counter">85</span>%
@@ -64,14 +78,14 @@ const SkillArea = () => {
                 <div className="skill-area__one-right-skill-item">
                   <div className="skill-area__one-right-skill-item-content">
                     <div className="skill-area__one-right-skill-item-content-title">
-                      <span>Innovation Locale</span>
+                      <span>Transformation Digitale PME</span>
                     </div>
                     <div className="skill-area__one-right-skill-item-content-count">
-                      <span className="counter">95</span>%
+                      <span className="counter">88</span>%
                     </div>
                   </div>
                   <div className="skill-area__one-right-skill-item-inner">
-                    <div className="skill-area__one-right-skill-item-bar" data-width="95"></div>
+                    <div className="skill-area__one-right-skill-item-bar" data-width="88"></div>
                   </div>
                 </div>
               </div>
@@ -79,14 +93,14 @@ const SkillArea = () => {
           </div>
         </div>
       </div>
-      <ModalVideo 
+      {/* <ModalVideo 
         className='video-modal' 
         channel="youtube" 
         autoplay 
         isOpen={openVideo} 
         videoId="SZEflIVnhH8" 
         onClose={() => setOpenVideo(false)} 
-      />
+      /> */}
     </>
   );
 };

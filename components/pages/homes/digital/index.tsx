@@ -1,32 +1,31 @@
 "use client";
 import SEO from "@/components/data/seo";
-import HeaderFive from "@/components/layout/headers/header/header-five";
-import BannerFive from "./banner";
-import AboutFive from "./about";
-import WorkAreaFive from "./work";
-import Solution from "./solution";
-import ServicesFive from "./services";
-import Choose from "./choose";
-import TestimonialFive from "./testimonial";
-import BlogFive from "./blog";
-import FooterFive from "@/components/layout/footers/footer-five";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
+import HeaderOne from "@/components/layout/headers/header/header-one";
+import BannerFive from "./banner";
+import About from "./about";
+import Choose from "./choose";
+import Services from "./services";
+import Solution from "./solution";
+import WorkArea from "./work";
+import FooterOne from "@/components/layout/footers/footer-one";
+import Blog from "./blog";
+import Testimonial from "./testimonial";
 
 const Digital = () => {
-
     return (
         <div>
-            <SEO pageTitle='Yiri Digital' />
-            <HeaderFive variant={""} />
+            <SEO pageTitle='YIRI Digital - Transformation Digitale des PME' />
+            <HeaderOne variant="" />
             <BannerFive />
-            <AboutFive />
-            <WorkAreaFive />
-            <Solution />
-            <ServicesFive />
+            <About />
             <Choose />
-            <TestimonialFive />
-            <BlogFive />
-            <FooterFive />
+            <Services />
+            <Solution />
+            <WorkArea />
+            <Testimonial />
+            <Blog />
+            <FooterOne />
             <ScrollToTop />
         </div>
     );

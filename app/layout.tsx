@@ -14,7 +14,7 @@ export default function RootLayout({ children }:Readonly<{
             <head>
                 <link rel='icon' type='image/png' href='/favicon.ico' />
             </head>
-            <body>
+            <body className='font-medium tracking-wider'>
                 {children}
             </body>
         </html>

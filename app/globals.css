@@ -11,7 +11,49 @@
 @import "tailwindcss";
 
 :root {
+  --body-font: "Space Grotesk", sans-serif;
+  --heading-font: "Space Grotesk", sans-serif;
 
+  /* Blancs / noirs */
+  --text-white: #FFFFFF;
+  --bg-white: #FFFFFF;
+  --btn-white: #FFFFFF;
+  --border-white: #FFFFFF;
+  --black: #000000;
+
+  /* Couleurs principales (tech blue) */
+  --primary: #2D8BBA;   /* Principal tech */
+  --primary-color-2: #A3D3E6;   /* Clair pour hover, badges */
+  --primary-color-3: #1F5E7F;   /* Foncé, boutons, headers */
+
+  /* Heading */
+  --bg-heading-color: #0F2C3F;  /* Fond section tech sombre */
+  --text-heading-color: #0F2C3F;
+  --btn-heading-color: #1C1E26;
+
+  /* Texte / body */
+  --body-color: #2E2E2E;
+  --dark-one: #1C1E22;
+  --dark-two: #222429;
+
+  /* Couleurs secondaires / accents */
+  --color-1: #F2F9FC;           /* Fond doux */
+  --color-2: #7A8A99;           /* Texte secondaire */
+  --color-3: #1B4F72;           /* Bleu sombre secondaire */
+  --color-4: #DCE8EF;           /* Gris clair / border */
+  --color-5: #0B1F2B;           /* Très sombre pour contraste */
+  --color-6: rgba(46, 139, 186, 0.2); /* Accent fond semi-transparent */
+  --color-7: #07204D;           /* Accent foncé pur */
+
+  /* Bordures */
+  --border-color-1: #E7E7E7;
+  --border-color-2: #E0ECF3;
+  --border-color-3: rgba(0, 0, 0, 0.08);
+  --border-color-4: rgba(0, 0, 0, 0.04);
+
+  /* Ombres */
+  --box-shadow-1: 0px 25px 70px rgba(45, 139, 186, 0.08);
+  --box-shadow-2: 0px 10px 70px rgba(45, 139, 186, 0.1);
 }
 
 @theme inline {
@@ -27,4 +69,15 @@
 }
 
 body {
+  font-family: 'Space Grotesk', sans-serif;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+

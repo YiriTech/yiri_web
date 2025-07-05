@@ -19,10 +19,10 @@ const BannerOne = () => {
                     <div className="row align-items-center gy-4 justify-content-center">
                         <div className="col-xl-6 col-lg-6">
                             <div className="banner__one-content">
-                                <span className="subtitle-one">Yiri Academy</span>
-                                <h2>Avec <span>Yiri Academy</span> la tech au service de la renaissance africaine</h2>
-                                <p>Un mot d’ordre fort, qui reflète l’ambition d’une jeunesse formée, engagée et actrice du changement.</p>
-                                <Link href="/services" className="btn-two">Découvrir
+                                <span className="subtitle-one">YIRI Academy</span>
+                                <h2>Formez-vous aux <span>Compétences Tech</span> les Plus Demandées</h2>
+                                <p>Formations pratiques en data, développement, IA, cybersécurité et design via ateliers, bootcamps et programmes hybrides. Ciblant les jeunes, notamment les femmes et les non-diplômés.</p>
+                                <Link href="/contact" className="btn-two">Rejoindre une Formation
                                     <i className="fas fa-arrow-right"></i>
                                 </Link>
                             </div>

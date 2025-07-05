@@ -23,9 +23,9 @@ const AboutTwo = () => {
                     <div className="about__two-left-progressbar">
                       <div className="about__two-left-progressbar-wrapper">
                         <div className="about__two-left-progressbar-value">
-                          <span>85%</span>
+                          <span>60%</span>
                         </div>
-                        <h4 className="about__two-right-progressbar-title">Impact Réalisé</h4>
+                        <h4 className="about__two-right-progressbar-title">Population africaine &lt; 25 ans</h4>
                       </div>
                     </div>
                   </div>
@@ -36,19 +36,19 @@ const AboutTwo = () => {
               <div className="about__two-content">
                 <span className="subtitle-one">Qui sommes-nous</span>
                 <h2>La Tech au Service de la Renaissance Africaine</h2>
-                <p>Portée par de jeunes ingénieurs africains, YIRI TECH AFRICA œuvre pour l'éveil technologique de l'Afrique subsaharienne. Notre mission : créer une culture numérique inclusive et dynamique.</p>
+                <p>YIRI TECH AFRICA est une initiative lancée par de jeunes ingénieurs africains formés au Maroc, dans le but d'utiliser la technologie pour favoriser le développement et l'autonomie en Afrique, en particulier en Afrique subsaharienne.</p>
                 <div className="about__two-content-service">
                   <div className="service">
                     <i className="far fa-check-circle"></i>
-                    <span>Formation des jeunes talents tech</span>
+                    <span>Former les jeunes aux compétences tech les plus demandées</span>
                   </div>
                   <div className="service">
                     <i className="far fa-check-circle"></i>
-                    <span>Reveille des consciences</span>
+                    <span>Connecter les talents aux entreprises et opportunités</span>
                   </div>
                   <div className="service">
                     <i className="far fa-check-circle"></i>
-                    <span>Conferences</span>
+                    <span>Accompagner les initiatives locales dans leur digitalisation</span>
                   </div>
                 </div>
                 <Link href="/about" className="btn-two">En Savoir Plus<i className="fas fa-arrow-right"></i></Link>

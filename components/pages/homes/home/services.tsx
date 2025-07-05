@@ -6,37 +6,37 @@ const yiriServicesData = [
     id: 1,
     icon: <i className="fas fa-graduation-cap"></i>,
     title: "YIRI Academy",
-    description: "Formations pratiques sur les outils numériques et l'entrepreneuriat tech"
+    description: "Formations pratiques en data, développement, IA, cybersécurité et design via ateliers, bootcamps et programmes hybrides"
   },
   {
     id: 2,
     icon: <i className="fas fa-laptop-code"></i>,
     title: "YIRI Digital",
-    description: "Accompagnement des PME dans leur transformation digitale"
+    description: "Accompagnement des TPE/PME dans leur transformation digitale, diagnostics numériques et création d'outils de gestion"
   },
   {
     id: 3,
-    icon: <i className="fas fa-users"></i>,
-    title: "YIRI Conférences",
-    description: "Événements et panels sur les enjeux tech en Afrique"
+    icon: <i className="fas fa-lightbulb"></i>,
+    title: "YIRI Think Tank",
+    description: "Production de notes de réflexion, rapports stratégiques et veille technologique africaine pour influencer les politiques publiques"
   },
   {
     id: 4,
-    icon: <i className="fas fa-lightbulb"></i>,
-    title: "YIRI Think Tank",
-    description: "Réflexions et propositions pour les décideurs"
+    icon: <i className="fas fa-users"></i>,
+    title: "YIRI Conférences",
+    description: "Organisation d'événements, panels et journées tech avec des invités africains et internationaux, accessibles gratuitement"
   },
   {
     id: 5,
     icon: <i className="fas fa-trophy"></i>,
-    title: "Concours Innovation",
-    description: "Soutien aux jeunes porteurs de projets tech"
+    title: "Concours d'Innovation",
+    description: "Détection et soutien de projets locaux à fort impact dans la santé, l'agriculture et l'éducation"
   },
   {
     id: 6,
     icon: <i className="fas fa-network-wired"></i>,
-    title: "Réseau Pro",
-    description: "Passerelles entre étudiants, professionnels et institutions"
+    title: "Réseau & Partenariats",
+    description: "Connecter les talents aux entreprises, institutions et opportunités pour créer un écosystème tech africain dynamique"
   }
 ];
 

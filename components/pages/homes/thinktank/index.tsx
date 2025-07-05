@@ -17,7 +17,7 @@ import BlogThree from "./blog";
 const ThinTank = () => {
     return (
         <>
-            <SEO pageTitle="Yiri Think Tank" />
+            <SEO pageTitle="YIRI Think Tank - Recherche et Influence Politique" />
             <HeaderThree variant={""}  />
             <BannerThree />
             <ServicesThree />

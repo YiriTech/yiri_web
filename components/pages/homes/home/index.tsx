@@ -9,7 +9,7 @@ import Team from "./team";
 import TextSlide from "../thinktank/text-slide";
 import ContactForm from "./contact-form";
 import WorkProcess from "./work";
-import TestimonialTwo from "./testimonial";
+import PartnersSection from "./partners";
 import BlogTwo from "./blog";
 import FooterTwo from "@/components/layout/footers/footer-two";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
@@ -17,7 +17,7 @@ import ScrollToTop from "../../common/scroll/scroll-to-top";
 const Home = () => {
     return (
         <>
-            <SEO pageTitle="Yiri Africa" />
+            <SEO pageTitle="YIRI TECH AFRICA - La Tech au Service de la Renaissance Africaine" />
             <HeaderTwo variant=""  />
             <BannerTwo />
             <AboutTwo />
@@ -27,8 +27,8 @@ const Home = () => {
             <TextSlide />
             <ContactForm />
             <WorkProcess />
-            <TestimonialTwo />
-            <BlogTwo />
+            <PartnersSection />
+            {/* <BlogTwo /> */}
             <FooterTwo />
             <ScrollToTop />  
         </>

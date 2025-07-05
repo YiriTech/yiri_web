@@ -17,7 +17,7 @@ import HeaderTwo from "@/components/layout/headers/header/header-two";
 const Academy = () => {
     return (
         <div>
-            <SEO pageTitle='Academy' />
+            <SEO pageTitle='YIRI Academy - Formations Tech en Afrique' />
             <HeaderTwo variant="" />
             <BannerOne />
             <About />

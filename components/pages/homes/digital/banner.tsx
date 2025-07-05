@@ -17,11 +17,11 @@ const BannerFive = () => {
                     <div className="row align-items-center gy-4 justify-content-center">
                         <div className="col-xl-7 col-lg-6">
                             <div className="banner__five-content">
-                                <span className="subtitle-one">Yiri Digital</span>
-                                <h2>Avec <span className="text-bordered text-primary">Yiri Digital</span> on crée des solutions digitales pour votre entreprise</h2>
-                                <p>Des solutions digitales pour votre entreprise</p>
+                                <span className="subtitle-one">YIRI Digital</span>
+                                <h2>Transformez Votre <span className="text-bordered text-primary">Entreprise</span> avec le Numérique</h2>
+                                <p>Accompagnement des TPE/PME dans leur transformation digitale, diagnostics numériques, création de sites et outils de gestion, et valorisation des savoir-faire traditionnels.</p>
                                 <div className="banner__five-content-bottom">
-                                    <Link href="/contact" className="btn-two">S'inscrire<i className="fas fa-arrow-right"></i></Link>
+                                    <Link href="/contact" className="btn-two">Demander un Diagnostic<i className="fas fa-arrow-right"></i></Link>
                                     {/* <span className="banner__five-content-video-btn video-popup" onClick={openVideoModal}><i className="fas fa-play"></i></span> */}
                                 </div>
                             </div>

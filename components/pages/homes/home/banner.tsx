@@ -25,8 +25,8 @@ const BannerTwo = () => {
 					modules={[Autoplay, EffectFade]}
 				>
 					<SwiperSlide>
-						<div className="banner__two-single-slider" style={{backgroundImage: `url(${banner1.src})`}}>
-							<div className="banner-two-shape">
+						<div className="banner__two-single-slider " style={{backgroundImage: `url(${banner1.src})`}}>
+							{/* <div className="banner-two-shape">
 								<div className="banner-two-shape-1 shape">
 									<img src={shapeContent.src} alt="shape" className="animate-rotate" />
 								</div>
@@ -39,7 +39,7 @@ const BannerTwo = () => {
 								<div className="banner-two-shape-4 shape">
 									<img src={shape3.src} alt="image" />
 								</div>
-							</div>
+							</div> */}
 							<div className="container">
 								<div className="row">
 									<div className="col-xl-5 col-lg-10 col-md-8">
@@ -55,7 +55,7 @@ const BannerTwo = () => {
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className="banner__two-single-slider" style={{backgroundImage: `url(${banner2.src})`}}>
-							<div className="banner-two-shape">
+							{/* <div className="banner-two-shape">
 								<div className="banner-two-shape-1 shape">
 									<img src={shapeContent.src} alt="shape" className="animate-rotate" />
 								</div>
@@ -68,7 +68,7 @@ const BannerTwo = () => {
 								<div className="banner-two-shape-4 shape">
 									<img src={shape3.src} alt="image" />
 								</div>
-							</div>
+							</div> */}
 							<div className="container">
 								<div className="row">
 									<div className="col-xl-5 col-lg-10 col-md-8">
@@ -84,7 +84,7 @@ const BannerTwo = () => {
 					</SwiperSlide>
 					<SwiperSlide>
 						<div className="banner__two-single-slider" style={{backgroundImage: `url(${banner3.src})`}}>
-							<div className="banner-two-shape">
+							{/* <div className="banner-two-shape">
 								<div className="banner-two-shape-1 shape">
 									<img src={shapeContent.src} alt="shape" className="animate-rotate" />
 								</div>
@@ -97,7 +97,7 @@ const BannerTwo = () => {
 								<div className="banner-two-shape-4 shape">
 									<img src={shape3.src} alt="image" />
 								</div>
-							</div>
+							</div> */}
 							<div className="container">
 								<div className="row">
 									<div className="col-xl-5 col-lg-10 col-md-12">

@@ -11,9 +11,9 @@ import ScrollToTop from "../../common/scroll/scroll-to-top";
 const ServicePage = () => {
     return (
         <>
-            <SEO pageTitle="Our Services" />
-            <HeaderOne />
-            <BreadCrumb title="Our Services" innerTitle="Our Services" />
+            <SEO pageTitle="Nos Programmes - YIRI TECH AFRICA" />
+            <HeaderOne variant="" />
+            <BreadCrumb title="Nos Programmes" innerTitle="Axes Stratégiques" />
             <ServicesMain />
             <WorkArea />
             <Testimonial />

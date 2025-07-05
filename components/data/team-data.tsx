@@ -7,17 +7,33 @@ import team6 from "../../public/assets/img/team/team-6.jpg";
 
 const teamData = [
     {
-        id: 'derya-kurtulus',
+        id: 'francois-mansare',
         image: team1,
-        name: 'Derya Kurtulus',
-        position: 'Heating Expert',
-        mail: 'derya@gmail.com',
-        phone: '+125 (564) 656 156',
+        name: 'François Mansaré',
+        position: 'Ingénieur en Informatique & Économie Digitale pour la Finance',
+        mail: 'francois.mansare@yiri.tech',
+        phone: '+212 6 XX XX XX XX',
         category: 'founder',
+        description: 'Spécialiste en transformation numérique des systèmes économiques africains, et cofondateur de Yiri Tech Africa',
         social_link: [
             { link: 'https://linkedin.com', target: '_blank', icon: <i className="fab fa-linkedin-in"></i> },
             { link: 'https://twitter.com', target: '_blank', icon: <i className="fa-brands fa-x-twitter"></i> },
-            { link: 'https://facebook.com', target: '_blank', icon: <i className="fab fa-facebook-f"></i> },
+            { link: 'https://github.com', target: '_blank', icon: <i className="fab fa-github"></i> },
+        ],
+    },
+    {
+        id: 'diallo-sidy-mohamed-salim',
+        image: team2,
+        name: 'Diallo Sidy Mohamed Salim',
+        position: 'Ingénieur en Data & Software Engineering',
+        mail: 'salim.diallo@yiri.tech',
+        phone: '+212 6 XX XX XX XX',
+        category: 'founder',
+        description: 'Spécialiste en Data IA & Software, entrepreneur, et cofondateur de Yiri Tech Africa',
+        social_link: [
+            { link: 'https://linkedin.com', target: '_blank', icon: <i className="fab fa-linkedin-in"></i> },
+            { link: 'https://twitter.com', target: '_blank', icon: <i className="fa-brands fa-x-twitter"></i> },
+            { link: 'https://github.com', target: '_blank', icon: <i className="fab fa-github"></i> },
         ],
     },
     {

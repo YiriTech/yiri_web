@@ -9,9 +9,9 @@ import ScrollToTop from "../common/scroll/scroll-to-top";
 const AboutUs = () => {
     return (
       <>
-        <SEO pageTitle="About Us" />
+        <SEO pageTitle="À Propos - YIRI TECH AFRICA" />
         <HeaderOne variant="" />
-        <BreadCrumb title="About Us" innerTitle="Company About" />
+        <BreadCrumb title="À Propos" innerTitle="Qui Sommes-Nous" />
         <AboutMain />
         <FooterOne />        
         <ScrollToTop />
