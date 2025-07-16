@@ -36,7 +36,7 @@ const HeaderThree = ({variant}:{variant:string}) => {
                     <div className="header__area-menubar-right">
                         <div className="header__area-menubar-right-box">
                             <div className="header__area-menubar-right-box-btn">
-                                <Link className="btn-one" href="/request-quote">Get Quote<i className="fas fa-arrow-right"></i></Link>
+                                <Link className="btn-one" href="/request-quote">Nous contactez<i className="fas fa-arrow-right"></i></Link>
                             </div>
                         </div>
                         <div className="header__area-menubar-right-responsive-menu menu__bar">

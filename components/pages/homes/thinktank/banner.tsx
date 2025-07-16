@@ -5,7 +5,7 @@ import banner1 from "../../../../public/assets/img/banner/banner-three.png";
 import banner2 from "../../../../public/assets/img/banner/banner-three-2.png";
 import shape from "../../../../public/assets/img/banner/banner-three-shape-overlay.png";
 
-const BannerThree = () => {
+const BannerThinkTank = () => {
   	return (
 		<>
         <div className="banner__three">
@@ -59,4 +59,4 @@ const BannerThree = () => {
 	);
 };
 
-export default BannerThree;
+export default BannerThinkTank;

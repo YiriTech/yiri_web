@@ -2,7 +2,7 @@ import Link from "next/link";
 import bannerBg from "../../../../public/assets/img/banner/banner-four-bg.png";
 import banner1 from "../../../../public/assets/img/banner/banner-four.png";
 
-const BannerFour = () => {
+const BannerConference = () => {
     return (
         <>
             <div className="banner__four" style={{backgroundImage: `url(${bannerBg.src})`}}>
@@ -14,14 +14,14 @@ const BannerFour = () => {
                                 <h2>Événements <span className="text-bordered text-primary">Tech</span> Accessibles Gratuitement</h2>
                                 <p>Organisation d'événements, panels et journées tech avec des invités africains et internationaux, accessibles gratuitement aux jeunes et étudiants.</p>
                                 <div className="banner__four-content-bottom">
-                                    <Link href="/contact" className="btn-two">S'inscrire à un Événement<i className="fas fa-arrow-right"></i></Link>
-                                    <div className="banner__four-content-call">
+                                    <Link href="/contact" className="btn-two">Nous contactez<i className="fas fa-arrow-right"></i></Link>
+                                    {/* <div className="banner__four-content-call">
                                         <i className="flaticon-telephone-call"></i>
                                         <div className="banner__four-content-call-right">
                                             <span>Nous contacter</span>
                                             <Link href="tel:+212684499227">+212 6 84 49 92 27</Link>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -39,4 +39,4 @@ const BannerFour = () => {
     );
 };
 
-export default BannerFour;
+export default BannerConference;

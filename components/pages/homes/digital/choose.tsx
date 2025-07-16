@@ -16,21 +16,21 @@ const Choose = () => {
                     <div className="col-xl-5 col-lg-7 col-md-9">
                         <div className="why-choose-us__four-left">
                             <div className="why-choose-us__four-title">
-                                <span className="subtitle-one">Why Chose Us</span>
-                                <h2>Yiri Africa Your Trusted IT Partner</h2>
-                                <p>Our expertise, we ensure your business stays ahead in the digital landscape, driving success and growth together</p>
+                                <span className="subtitle-one">Pourquoi choisir YIRI DIGITAL ?</span>
+                                <h2>Votre partenaire pour la digitalisation des TPE/PME</h2>
+                                <p>Nous accompagnons les petites entreprises africaines dans leur transformation numérique avec des solutions simples, un accompagnement humain et une expertise locale. Notre objectif : rendre le digital accessible à tous, pour plus de performance et d’innovation.</p>
                                 <div className="why-choose-us__four-progress-bar">
                                     <div className="why-choose-us__four-progress-bar-wrapper">
                                         <div className="single-progress-bar">
-                                            <span>75%</span>
+                                            <span>10+</span>
                                         </div>
-                                        <h3>Successful</h3>
+                                        <h3>TPE/PME accompagnées</h3>
                                     </div>
                                     <div className="why-choose-us__four-progress-bar-wrapper">
                                         <div className="single-progress-bar">
-                                            <span>85%</span>
+                                            <span>100%</span>
                                         </div>
-                                        <h3>Branching</h3>
+                                        <h3>Formation pratique</h3>
                                     </div>
                                 </div>
                             </div>

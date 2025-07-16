@@ -9,8 +9,8 @@ const WorkAreaFive = () => {
             <div className="container">
                 <div className="row justify-content-center text-center mb-50">
                     <div className="col-xl-6 col-lg-7 col-md-9">
-                        <span className="subtitle-one">Work Process</span>
-                        <h2>Workflow Journey</h2>
+                        <span className="subtitle-one">Notre démarche</span>
+                        <h2>Un accompagnement digital sur-mesure</h2>
                     </div>
                 </div>
                 <div className="work-process__three-card">
@@ -21,18 +21,23 @@ const WorkAreaFive = () => {
                     </div>
                     <div className="work-process__three-card-single">
                         <h3>01</h3>
-                        <h5>Idea Generation</h5>
-                        <p>Creativity at this initial stage, we focus on understanding your unique challenge</p>
+                        <h5>Diagnostic numérique gratuit</h5>
+                        <p>Identifier les besoins spécifiques des entreprises (site web, gestion, communication).</p>
                     </div>
                     <div className="work-process__three-card-single middle">
                         <h3>02</h3>
-                        <h5>Solution Development</h5>
-                        <p>Transitioning from ideas to actionable solutions, our experts employ cutting-edge technologies</p>
+                        <h5>Création de solutions digitales adaptées</h5>
+                        <p>Sites vitrines et e-commerce clé en main. Outils de gestion simplifiés (facturation, gestion de stock, CRM).</p>
+                    </div>
+                    <div className="work-process__three-card-single middle">
+                        <h3>03</h3>
+                        <h5>Formation des responsables d’entreprise</h5>
+                        <p>Ateliers pratiques sur les outils numériques (WhatsApp Business, Google Workspace, etc.).</p>
                     </div>
                     <div className="work-process__three-card-single">
-                        <h3>03</h3>
-                        <h5>Outcome Delivery</h5>
-                        <p>The culmination of our process, outcome delivery, is where plans become reality.</p>
+                        <h3>04</h3>
+                        <h5>Suivi et accompagnement</h5>
+                        <p>3 mois de support post-digitalisation pour garantir une adoption réussie.</p>
                     </div>
                 </div>
             </div>

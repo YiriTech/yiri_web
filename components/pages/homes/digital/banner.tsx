@@ -5,7 +5,7 @@ import bannerBg from "../../../../public/assets/img/banner/banner-five-bg.png";
 import banner1 from "../../../../public/assets/img/banner/banner-five.png";
 import banner2 from "../../../../public/assets/img/banner/banner-five-2.png";
 
-const BannerFive = () => {
+const BannerDigital = () => {
     const [openVideo, setOpenVideo] = useState(false);
     const openVideoModal = () => {
         setOpenVideo(true);
@@ -21,7 +21,7 @@ const BannerFive = () => {
                                 <h2>Transformez Votre <span className="text-bordered text-primary">Entreprise</span> avec le Numérique</h2>
                                 <p>Accompagnement des TPE/PME dans leur transformation digitale, diagnostics numériques, création de sites et outils de gestion, et valorisation des savoir-faire traditionnels.</p>
                                 <div className="banner__five-content-bottom">
-                                    <Link href="/contact" className="btn-two">Demander un Diagnostic<i className="fas fa-arrow-right"></i></Link>
+                                    <Link href="/contact" className="btn-two">Nous Contactez<i className="fas fa-arrow-right"></i></Link>
                                     {/* <span className="banner__five-content-video-btn video-popup" onClick={openVideoModal}><i className="fas fa-play"></i></span> */}
                                 </div>
                             </div>
@@ -42,4 +42,4 @@ const BannerFive = () => {
     );
 };
 
-export default BannerFive;
+export default BannerDigital;

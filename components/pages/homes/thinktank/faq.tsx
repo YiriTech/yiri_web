@@ -1,23 +1,66 @@
 import React, { useState } from 'react';
 import Count from '../../common/count';
 
-const Faq = () => {
-    const [activeIndex, setActiveIndex] = useState(1);
+const FaqThinkTank = () => {
+    const [activeIndex, setActiveIndex] = useState<number | null>(1);
     const faqs = [
         {
-            question: "What services do you offer?",
-            answer: "We specialize in a broad range of IT services, including software development, cloud services, cyber security, IT consulting, and tech support. Visit our Services page for detailed information."
+            question: "Pourquoi un Think Tank africain sur le numérique ?",
+            answer: "L’Afrique a besoin d’un leadership intellectuel fort pour accompagner sa transformation numérique. Trop peu de réflexions et d’études locales nourrissent les politiques publiques et les stratégies des acteurs économiques. YIRI THINK TANK se positionne comme un laboratoire d’idées africain pour produire des analyses et recommandations adaptées aux réalités locales, donner une voix aux jeunes, aux femmes et aux entrepreneurs de terrain, et influencer positivement les décideurs publics et privés."
         },
         {
-            question: "How can I request a quote for my project?",
-            answer: "Fill out the contact form on this page, providing as many details as possible about your project. A representative will be in touch within one business day to discuss your needs and provide a tailored quote."
+            question: "Quelles sont les ambitions de YIRI THINK TANK pour 2025-2026 ?",
+            answer: (
+                <ul style={{marginLeft: '1rem'}}>
+                    <li>Réaliser 2 rapports stratégiques sur le numérique en Afrique de l’Ouest</li>
+                    <li>Organiser des tables rondes thématiques avec décideurs et acteurs terrain</li>
+                    <li>Créer un réseau d’experts africains et de la diaspora</li>
+                </ul>
+            )
         },
         {
-            question: "What is your process for client inquiries?",
-            answer: "We prioritize getting back to you quickly. After an inquiry is submitted, it'll be routed to the appropriate team, who will review your information and respond with the next steps or a request for further details."
+            question: "Quels sont les axes d’action prioritaires ?",
+            answer: (
+                <ul style={{marginLeft: '1rem'}}>
+                    <li>Notes de veille et rapports d’analyse</li>
+                    <li>Recommandations pour politiques publiques (éducation, inclusion numérique, data)</li>
+                    <li>Événements de réflexion (webinaires, panels, cafés tech)</li>
+                    <li>Plateforme en ligne pour partager nos publications</li>
+                </ul>
+            )
+        },
+        {
+            question: "Quels sont les indicateurs de succès (KPIs) ?",
+            answer: (
+                <ul style={{marginLeft: '1rem'}}>
+                    <li>2 publications majeures diffusées en Afrique francophone</li>
+                    <li>1000 téléchargements de nos rapports sur la plateforme</li>
+                    <li>5 recommandations adoptées ou discutées par des institutions locales</li>
+                </ul>
+            )
+        },
+        {
+            question: "Pourquoi rejoindre YIRI THINK TANK ?",
+            answer: (
+                <ul style={{marginLeft: '1rem'}}>
+                    <li>Amplifiez votre voix sur des sujets tech en Afrique</li>
+                    <li>Participez à la construction de politiques plus inclusives et innovantes</li>
+                    <li>Appuyez une structure jeune qui relie terrain et décisionnaires</li>
+                </ul>
+            )
+        },
+        {
+            question: "Comment contacter YIRI THINK TANK ?",
+            answer: (
+                <div>
+                    <div>YIRI TECH AFRICA</div>
+                    <div>📧 Email : <a href="mailto:contact@yiri.tech">contact@yiri.tech</a></div>
+                    <div>🌐 Site web : <a href="https://www.yiri.tech" target="_blank" rel="noopener noreferrer">www.yiri.tech</a></div>
+                </div>
+            )
         },
     ];
-    const toggleFaq = (index) => {
+    const toggleFaq = (index:number | null) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
     return (
@@ -27,11 +70,11 @@ const Faq = () => {
                 <div className="row gy-4 align-items-center">
                     <div className="col-xl-6">
                         <div className="faq__two-title">
-                            <span className="subtitle-one">Ask Question</span>
-                            <h2>Unraveling IT <span className="highlighted-two">Complexities</span> FAQs</h2>
-                            <p>Business consulting services can benefit your company  providing man or objective insights, identifying areas for improv  streamlining processes, developing strategies for grow</p>
+                            <span className="subtitle-one">Questions fréquentes</span>
+                            <h2>YIRI THINK TANK : <span className="highlighted-two">FAQThinkTank</span></h2>
+                            <p>Découvrez notre mission, nos ambitions et comment rejoindre notre laboratoire d’idées pour la transformation numérique africaine.</p>
                         </div>
-                        <div className="award">
+                        {/* <div className="award">
                             <div className="award-wrapper">
                                 <div className="award-icon">
                                     <i className="fas fa-award"></i>
@@ -42,19 +85,19 @@ const Faq = () => {
                                 </div>
                                 <span>Winning award</span>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-xl-6">
-                        <div className="faq-collapse">
-                            {faqs.map((faq, index) => (
-                                <div className="faq-collapse-item" key={index}>
-                                    <div className={`faq-collapse-item-card ${activeIndex === index ? 'active' : ''}`}>
-                                        <div className="faq-collapse-item-card-header" onClick={() => toggleFaq(index)}>
-                                            <h6>{faq.question}</h6>
+                        <div className="faqThinkTank-collapse">
+                            {faqs.map((faqThinkTank, index) => (
+                                <div className="faqThinkTank-collapse-item" key={index}>
+                                    <div className={`faqThinkTank-collapse-item-card ${activeIndex === index ? 'active' : ''}`}>
+                                        <div className="faqThinkTank-collapse-item-card-header" onClick={() => toggleFaq(index)}>
+                                            <h6>{faqThinkTank.question}</h6>
                                             <i className={`fas ${activeIndex === index ? 'fa-minus' : 'fa-plus'}`}></i>
                                         </div>
-                                        <div className={`faq-collapse-item-card-header-content ${activeIndex === index ? 'active' : 'display-none'}`}>
-                                            <p>{faq.answer}</p>
+                                        <div className={`faqThinkTank-collapse-item-card-header-content ${activeIndex === index ? 'active' : 'display-none'}`}>
+                                            <p>{faqThinkTank.answer}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -68,4 +111,4 @@ const Faq = () => {
     );
 };
 
-export default Faq;
+export default FaqThinkTank;

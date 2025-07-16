@@ -8,14 +8,14 @@ const FooterThree = () => {
     return (
         <>
         <div className="footer__three">
-            <div className="container pt-80 pb-80">
+            <div className="container pt-80">
                 <div className="footer__three-top">
                     <h3>Rejoignez notre communauté sociale!</h3>
                     <div className="footer__three-top-social">
                         <Social />
                     </div>
                 </div>
-                <div className="row gy-4 justify-content-between">
+                {/* <div className="row gy-4 justify-content-between">
                     <div className="col-xl-3 col-md-6 col-sm-7 xl-mb-30">
                         <div className="footer__three-widget">
                             <div className="footer__three-widget-about">
@@ -82,7 +82,7 @@ const FooterThree = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <div className="copyright__one two">
                 <div className="container">

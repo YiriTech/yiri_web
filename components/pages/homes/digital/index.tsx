@@ -2,8 +2,8 @@
 import SEO from "@/components/data/seo";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
 import HeaderOne from "@/components/layout/headers/header/header-one";
-import BannerFive from "./banner";
-import About from "./about";
+import BannerDigital from "./banner";
+import AboutDigital from "./about";
 import Choose from "./choose";
 import Services from "./services";
 import Solution from "./solution";
@@ -17,14 +17,14 @@ const Digital = () => {
         <div>
             <SEO pageTitle='YIRI Digital - Transformation Digitale des PME' />
             <HeaderOne variant="" />
-            <BannerFive />
-            <About />
-            <Choose />
-            <Services />
-            <Solution />
+            <BannerDigital />
+            <AboutDigital />
             <WorkArea />
-            <Testimonial />
-            <Blog />
+            <Choose />
+            {/* <Services /> */}
+            <Solution />
+            {/* <Testimonial /> */}
+            {/* <Blog /> */}
             <FooterOne />
             <ScrollToTop />
         </div>

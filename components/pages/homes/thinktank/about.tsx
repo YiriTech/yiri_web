@@ -10,24 +10,15 @@ const AboutThree = () => {
                 <div className="row align-items-center gy-4">
                     <div className="col-xl-6 col-lg-6 col-md-10 col-sm-12">
                         <div className="about__three-content">
-                            <span className="subtitle-one">About us</span>
-                            <h2>Uniting Ideas Power of <span className="highlighted-two">Collaboration</span></h2>
-                            <p>Harness the collective brilliance of teamwork with our model for collaboration, fostering innovation and thought integration</p>
+                            <span className="subtitle-one">Nos ambitions pour 2025-2026</span>
+                            <h2>Pour un Think Tank africain d'impact</h2>
+                            <p></p>
                             <div className="about__three-content-service">
-                                <div className="about__three-content-service-single">
-                                    <i className="flaticon-good-feedback"></i>
-                                    <div className="content">
-                                        <h4>CyberSecure IT</h4>
-                                        <p>IT Technology is an category encompassing aspects  category encompassing aspects</p>
-                                    </div>
-                                </div>
-                                <div className="about__three-content-service-single">
-                                    <i className="flaticon-incoming-message"></i>
-                                    <div className="content">
-                                        <h4>Power up your IT</h4>
-                                        <p>IT Technology is an category encompassing aspects  category encompassing aspects</p>
-                                    </div>
-                                </div>
+                                <ul style={{textAlign: 'left', fontSize: '1.1rem', lineHeight: '2', margin: 0, padding: 0, listStyle: 'disc inside'}}>
+                                    <li>Réaliser 2 rapports stratégiques sur le numérique en Afrique de l’Ouest</li>
+                                    <li>Organiser des tables rondes thématiques avec décideurs et acteurs terrain</li>
+                                    <li>Créer un réseau d’experts africains et de la diaspora</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -35,8 +26,8 @@ const AboutThree = () => {
                         <div className="about__three-right">
                             <div className="row align-items-center">
                                 <div className="about__three-right-counter">
-                                    <h4 className="counter"><Count number={25}/></h4>
-                                    <span>Years Of experience</span>								
+                                    <h4 className="counter">+<Count number={10}/></h4>
+                                    <span>Experts</span>								
                                 </div>
                                 <div className="col-xl-6 col-lg-7 col-md-6 col-sm-6">
                                     <div className="about__three-right-image-left-side">

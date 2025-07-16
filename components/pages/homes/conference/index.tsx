@@ -2,8 +2,8 @@
 import SEO from "@/components/data/seo";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
 import HeaderOne from "@/components/layout/headers/header/header-one";
-import BannerFour from "./banner";
-import About from "./about";
+import BannerConference from "./banner";
+import AboutConferences from "./about";
 import Choose from "./choose";
 import Services from "./services";
 import Video from "./video";
@@ -15,12 +15,12 @@ const Conference = () => {
         <div>
             <SEO pageTitle='YIRI Conférences - Événements Tech en Afrique' />
             <HeaderOne variant="" />
-            <BannerFour />
-            <About />
-            <Choose />
-            <Services />
+            <BannerConference />
+            <AboutConferences />
+            {/* <Choose /> */}
+            {/* <Services /> */}
             <Video />
-            <Blog />
+            {/* <Blog /> */}
             <FooterOne />
             <ScrollToTop />
         </div>
