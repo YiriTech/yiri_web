@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay} from 'swiper/modules';
 import Link from "next/link";
 
-const Portfolio = () => {
+const PortfolioAcademy = () => {
     const slideControl = {
 		spaceBetween: 35,
 		slidesPerView: 3,
@@ -36,13 +36,13 @@ const Portfolio = () => {
                 <div className="row gy-4 align-items-end justify-content-between mb-5">
                     <div className="col-xl-6 col-lg-7 col-md-9 col-sm-10">
                         <div className="portfolio__one-content-left">
-                            <span className="subtitle-one">Tech Portfolio</span>
-                            <h2>Case Studies in Ingenious IT Portfolio</h2>
+                            <span className="subtitle-one">Projets Étudiants</span>
+                            <h2>Réalisations de nos apprenants</h2>
                         </div>
                     </div>
                     <div className="col-xl-3 col-lg-4">
                         <div className="portfolio__one-content-right text-lg-end">
-                            <Link href="/portfolio/3-columns" className="btn-one">All Portfolio<i className="fas fa-arrow-right"></i></Link>
+                            <Link href="/portfolioAcademy/3-columns" className="btn-one">Voir tous les projets<i className="fas fa-arrow-right"></i></Link>
                         </div>
                     </div>
                 </div>
@@ -50,10 +50,10 @@ const Portfolio = () => {
             <div className="container custom__container">
                 <Swiper modules={[EffectFade, Autoplay]} {...slideControl} className="py-5">
                     {portfolioData?.map((data, id) => (
-                        <SwiperSlide key={id} className="portfolio__one-single-portfolio single-portfolio">
+                        <SwiperSlide key={id} className="portfolio__one-single-portfolioAcademy single-portfolioAcademy">
                             <img src={data.image.src} alt="image" />
-                            <div className="portfolio__one-single-portfolio-content">
-                                <h4><Link href={`/portfolio/${data.id}`}>{data.title}</Link></h4>
+                            <div className="portfolio__one-single-portfolioAcademy-content">
+                                <h4><Link href={`/portfolioAcademy/${data.id}`}>{data.title}</Link></h4>
                                 <span>{data.subtitle}</span>
                             </div>
                         </SwiperSlide>
@@ -64,4 +64,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default PortfolioAcademy;

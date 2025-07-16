@@ -1,8 +1,8 @@
-import banner1 from "../../../../public/assets/img/banner/banner-right-img.jpg";
+import banner1 from "../../../../public/assets/img/banner/academy/academy-banner.jpg";
 import bannerShape from "../../../../public/assets/img/shape/banner-shape.png";
 import Link from "next/link";
 
-const BannerOne = () => {
+const BannerAcademy = () => {
     return (
             <>
             <div className="banner__one"> 
@@ -21,8 +21,8 @@ const BannerOne = () => {
                             <div className="banner__one-content">
                                 <span className="subtitle-one">YIRI Academy</span>
                                 <h2>Formez-vous aux <span>Compétences Tech</span> les Plus Demandées</h2>
-                                <p>Formations pratiques en data, développement, IA, cybersécurité et design via ateliers, bootcamps et programmes hybrides. Ciblant les jeunes, notamment les femmes et les non-diplômés.</p>
-                                <Link href="/contact" className="btn-two">Rejoindre une Formation
+                                <p>Formations pratiques en entreprenariat, développement, IA, leadership via ateliers, bootcamps et challenges </p>
+                                <Link href="/contact" className="btn-two">Nous Contactez
                                     <i className="fas fa-arrow-right"></i>
                                 </Link>
                             </div>
@@ -46,4 +46,4 @@ const BannerOne = () => {
     );
 };
 
-export default BannerOne;
+export default BannerAcademy;

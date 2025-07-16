@@ -37,9 +37,9 @@ const slideControl = {
                     <div className="col-xl-6 col-lg-6">
                         <div className="testimonial__one-left" style={{backgroundImage: `url(${testimonialBg.src})`}}>
                             <div className="testimonial__one-left-title">
-                                <span className="subtitle-one">Client Testimonial</span>
-                                <h2>WebTech Solutions the <span className="highlighted">transfor</span> </h2>
-                                <Link href="/contact" className="btn-one">Get Support
+                                <span className="subtitle-one">Témoignages</span>
+                                <h2>YIRI Academy <span className="highlighted">transforme</span> les vies</h2>
+                                <Link href="/contact" className="btn-one">Rejoindre l'Academy
                                     <i className="fas fa-arrow-right"></i>
                                 </Link>
                             </div>
@@ -52,36 +52,36 @@ const slideControl = {
                                 <div className="single-slider">
                                     <div className="single-slider-user">
                                         <div className="single-slider-user-name">
-                                            <h4>Nasir Al Shakib</h4>
-                                            <span>Content Creator</span>
+                                            <h4>Fatoumata Diallo</h4>
+                                            <span>Développeuse Full-Stack</span>
                                         </div>
                                         <div className="single-slider-user-rating">
                                             <i className="fas fa-star"></i>
                                             <i className="fas fa-star"></i>
                                             <i className="fas fa-star"></i>
                                             <i className="fas fa-star"></i>
-                                            <i className="fas fa-star not-rated"></i>
+                                            <i className="fas fa-star"></i>
                                         </div>
                                     </div>
-                                    <p>Their product exceeded his my ro expectations. The the quality and attention to  moutstandin an  and it has become an essential most a education the a man who can do tant clearly</p>
+                                    <p>Grâce à YIRI Academy, j'ai pu me reconvertir dans le développement web. La formation pratique et l'accompagnement m'ont permis de trouver un emploi dans une startup tech à Conakry. Une vraie transformation de ma carrière !</p>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="single-slider">
                                     <div className="single-slider-user">
                                         <div className="single-slider-user-name">
-                                            <h4>Devon Lane</h4>
-                                            <span>Marketing</span>
+                                            <h4>Mamadou Barry</h4>
+                                            <span>Data Scientist</span>
                                         </div>
                                         <div className="single-slider-user-rating">
                                             <i className="fas fa-star"></i>
                                             <i className="fas fa-star"></i>
                                             <i className="fas fa-star"></i>
                                             <i className="fas fa-star"></i>
-                                            <i className="fas fa-star not-rated"></i>
+                                            <i className="fas fa-star"></i>
                                         </div>
                                     </div>
-                                    <p>Their product exceeded his my ro expectations. The the quality and attention to  moutstandin an  and it has become an essential most a education the a man who can do tant clearly</p>
+                                    <p>Formation exceptionnelle en Data Science ! Les projets concrets et l'approche pratique m'ont donné les compétences nécessaires pour travailler sur des projets d'IA en Afrique. YIRI Academy change vraiment la donne.</p>
                                 </div>
                             </SwiperSlide>
                         </Swiper>

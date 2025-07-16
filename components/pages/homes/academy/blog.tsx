@@ -8,8 +8,8 @@ const Blog = () => {
                 <div className="row justify-content-center text-center">
                     <div className="col-xl-6 col-lg-6">
                         <div className="blog__one-title">
-                            <span className="subtitle-one">Blog And news</span>
-                            <h2>Exploring Technology</h2>
+                            <span className="subtitle-one">Actualités & Ressources</span>
+                            <h2>Découvrez nos articles</h2>
                         </div>
                     </div>
                 </div>
@@ -26,11 +26,11 @@ const Blog = () => {
                                 </div>
                                 <div className="blog__one-single-blog-content">
                                     <div className="blog__one-single-blog-content-top">
-                                        <span><i className="far fa-user"></i>by Admin</span>
-                                        <span><i className="far fa-comment-dots"></i>Comments ({data.comment})</span>
+                                        <span><i className="far fa-user"></i>par YIRI Academy</span>
+                                        <span><i className="far fa-comment-dots"></i>Commentaires ({data.comment})</span>
                                     </div>
                                     <Link className="blog-heading" href={`/blog/${data.id}`}>{data.title}</Link>
-                                    <Link className="btn-three" href={`/blog/${data.id}`}>Read More<i className="fas fa-angle-right"></i></Link>
+                                    <Link className="btn-three" href={`/blog/${data.id}`}>Lire Plus<i className="fas fa-angle-right"></i></Link>
                                 </div>
                             </div>
                         </div>

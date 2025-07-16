@@ -2,12 +2,12 @@
 import SEO from "@/components/data/seo";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
 import HeaderOne from "@/components/layout/headers/header/header-one";
-import BannerOne from "./banner";
+import BannerAcademy from "./banner";
 import About from "./about";
 import ChooseUs from "./choose-us";
 import Features from "./features";
-import Portfolio from "./portfolio";
-import Pricing from "./pricing";
+import Portfolio from "./portfolioAcademy";
+// import Pricing from "./pricing";
 import WorkArea from "./work";
 import FooterOne from "@/components/layout/footers/footer-one";
 import Blog from "./blog";
@@ -17,17 +17,17 @@ import HeaderTwo from "@/components/layout/headers/header/header-two";
 const Academy = () => {
     return (
         <div>
-            <SEO pageTitle='YIRI Academy - Formations Tech en Afrique' />
+            <SEO pageTitle='YIRI Academy - Former les compétences numériques de demain' />
             <HeaderTwo variant="" />
-            <BannerOne />
+            <BannerAcademy />
             <About />
-            <ChooseUs />
-            <Features />
-            <Portfolio />
-            <Pricing />
+            {/* <ChooseUs /> */}
             <WorkArea />
-            <Testimonial />
-            <Blog />
+            <Features />
+            {/* <Portfolio /> */}
+            {/* <Pricing /> */}
+            {/* <Testimonial /> */}
+            {/* <Blog /> */}
             <FooterOne />
             <ScrollToTop />
         </div>
