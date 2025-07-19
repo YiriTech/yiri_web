@@ -1,4 +1,4 @@
-import portfolioData from "@/components/data/portfolio-data";
+import portfolioData from "@/components/data/evenements-data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay} from 'swiper/modules';
 import Link from "next/link";

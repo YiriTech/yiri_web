@@ -1,16 +1,16 @@
 "use client"
 import SEO from "@/components/data/seo";
-import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../common/breadcrumb";
 import FooterOne from "@/components/layout/footers/footer-one";
 import ScrollToTop from "../common/scroll/scroll-to-top";
 import FormArea from "./form";
+import Header from "@/components/layout/headers/header/Header";
 
 const ContactUs = () => {
     return (
         <>
             <SEO pageTitle="Contactez-nous" />        
-            <HeaderOne variant="" />
+            <Header variant="three" />
             <BreadCrumb title="Contactez-nous" innerTitle="Contactez-nous" />
             <div className="contact__two section-padding">
                 <div className="container">

@@ -15,7 +15,7 @@ const ServicesMain = () => {
                                     </div>
                                     <div className="services__two-single-service-content">
                                         <h4>{data.title}</h4>
-                                        <Link href={data.link} className="btn-three">Read More<i className="fas fa-chevron-right"></i></Link>
+                                        <Link href={data.link} className="btn-three">Voir plus<i className="fas fa-chevron-right"></i></Link>
                                     </div>
                                 </div>
                             </div>

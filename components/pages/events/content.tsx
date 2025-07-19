@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
-import portfolioData from '../../../data/portfolio-data';
 import Link from 'next/link';
+import EventsData from '@/components/data/evenements-data';
 
-const showPortfolioItem = 5;
+const showPortfolioItem = 4;
 
-const ThreeColumns = () => {
-    const portfolioItem = portfolioData;
-    const [items, setItems] = useState(portfolioItem);
+const TwoColumns = () => {
+    const EventItem = EventsData;
+    const [items, setItems] = useState(EventItem);
     const [next, setNext] = useState(showPortfolioItem);
     const handleLoadData = () => {
-        setNext(value => value + 1)
+        setNext(value => value + 2)
     }
     return (
-        <div className="portfolio__two section-padding three-columns">
+        <div className="portfolio__two section-padding">
             <div className="container">
-                <div className="row dark_image">
-                    {portfolioItem?.slice(0, next)?.map((data, id) => (
-                        <div className="col-xl-4 col-lg-4 col-md-6" key={id}>
+                <div className="row">
+                    {EventItem?.slice(0, next)?.map((data, id) => (
+                        <div className="col-lg-6" key={id}>
                             <div className="portfolio__two-single-item">
                                 <div className="portfolio__two-single-item-img-wrapper">
                                     <img src={data.image.src} alt="image" />
@@ -46,4 +46,4 @@ const ThreeColumns = () => {
     );
 };
 
-export default ThreeColumns;
+export default TwoColumns;

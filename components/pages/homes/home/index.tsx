@@ -1,6 +1,5 @@
 "use client"
 import SEO from "@/components/data/seo";
-import HeaderTwo from "@/components/layout/headers/header/header-two";
 import BannerTwo from "./banner";
 import AboutTwo from "./about";
 import ServicesTwo from "./services";
@@ -13,12 +12,13 @@ import PartnersSection from "./partners";
 import BlogTwo from "./blog";
 import FooterTwo from "@/components/layout/footers/footer-two";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
+import Header from "@/components/layout/headers/header/Header";
 
 const Home = () => {
     return (
         <>
             <SEO pageTitle="YIRI TECH AFRICA - La Tech au Service de la Renaissance Africaine" />
-            <HeaderTwo variant=""  />
+            <Header variant="one"  />
             <BannerTwo />
             <AboutTwo />
             <ServicesTwo />

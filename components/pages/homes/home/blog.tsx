@@ -1,7 +1,7 @@
 import blogData from '@/components/data/blog-data';
 import Link from 'next/link';
 
-const BlogTwo = () => {
+const Blog = () => {
     return (
         <div className="blog__two section-padding">
             <div className="container">
@@ -41,4 +41,4 @@ const BlogTwo = () => {
     );
 };
 
-export default BlogTwo;
+export default Blog;

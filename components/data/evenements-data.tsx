@@ -5,7 +5,7 @@ import image4 from "../../public/assets/img/portfolio/portfolio-3.jpg";
 import image5 from "../../public/assets/img/portfolio/portfolio-2.jpg";
 import image6 from "../../public/assets/img/portfolio/portfolio-1.jpg";
 
-const portfolioData = [
+const evenementsData = [
     {        
         id: 'real-time-monitoring',
         title: 'Real-Time Monitoring',
@@ -44,4 +44,4 @@ const portfolioData = [
     },
 ];
 
-export default portfolioData;
+export default evenementsData;

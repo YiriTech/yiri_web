@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Social from '@/components/data/social';
-import blogData from '@/components/data/blog-data';
 import BlogSidebar from '../blog-sidebar/blog-sidebar';
 import icon from '../../../../public/assets/img/icon/blog-details-quote.png';
 import image from '../../../../public/assets/img/blog/blog-details.png';
@@ -8,7 +7,9 @@ import avatar1 from '../../../../public/assets/img/avatar/avatar-1.jpg';
 import avatar2 from '../../../../public/assets/img/avatar/avatar-2.jpg';
 import avatar3 from '../../../../public/assets/img/avatar/avatar-3.jpg';
 
-const BlogSingleMain = ({singleData}) => {
+const BlogSingleMain = ({singleData}:{
+    singleData:any
+}) => {
     const category = singleData?.title.split(' ').slice(0, 2).join(' ') + '..';
 
     return (

@@ -1,7 +1,6 @@
 "use client";
 import SEO from "@/components/data/seo";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
-import HeaderOne from "@/components/layout/headers/header/header-one";
 import BannerAcademy from "./banner";
 import About from "./about";
 import ChooseUs from "./choose-us";
@@ -12,13 +11,13 @@ import WorkArea from "./work";
 import FooterOne from "@/components/layout/footers/footer-one";
 import Blog from "./blog";
 import Testimonial from "./testimonial";
-import HeaderTwo from "@/components/layout/headers/header/header-two";
+import Header from "@/components/layout/headers/header/Header";
 
 const Academy = () => {
     return (
         <div>
             <SEO pageTitle='YIRI Academy - Former les compétences numériques de demain' />
-            <HeaderTwo variant="" />
+            <Header variant="two" />
             <BannerAcademy />
             <About />
             {/* <ChooseUs /> */}

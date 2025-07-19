@@ -8,8 +8,8 @@ const TestimonialFive = () => {
                     <div className="testimonial__four-card-profile">
                         <img src={image.src} alt="image" />
                     </div>
-                    <h3>Fatoumata Diallo</h3>
-                    <p>Grâce à l’accompagnement de YIRI DIGITAL, notre entreprise a pu franchir un cap dans sa digitalisation. Les outils proposés sont simples, efficaces et adaptés à nos besoins quotidiens.</p>
+                    <h3>Sara Albert</h3>
+                    <p>Their professionals demonstrated a deep understanding of our business needs and provided tailored solutions that exceeded our expectations.</p>
                     <div className="testimonial__four-card-rating">
                         <i className="fas fa-star"></i>
                         <i className="fas fa-star"></i>

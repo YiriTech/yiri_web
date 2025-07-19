@@ -2,7 +2,7 @@ import icon from '../../../../public/assets/img/icon/project-details-icon.png';
 import image1 from '../../../../public/assets/img/portfolio/project-details.png';
 import image2 from '../../../../public/assets/img/portfolio/project-details-2.png';
 
-const PortfolioDetailsMain = ({singleData}) => {
+const EventDetailsMain = ({ singleData }: { singleData: any }) => {
     return (
         <div className="project__details section-padding">
             <div className="container">
@@ -82,4 +82,4 @@ const PortfolioDetailsMain = ({singleData}) => {
     );
 };
 
-export default PortfolioDetailsMain;
+export default EventDetailsMain;

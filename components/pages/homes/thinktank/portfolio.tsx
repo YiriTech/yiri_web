@@ -1,4 +1,4 @@
-import portfolioData from "@/components/data/portfolio-data";
+import portfolioData from "@/components/data/evenements-data";
 import Link from "next/link";
 
 const PortfolioThree = () => {

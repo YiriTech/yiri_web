@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
     "bootstrap": "^5.3.7",
     "next": "15.3.4",
     "nodemailer": "^7.0.3",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.60.0",
     "react-modal-video": "^2.0.2",
-    "swiper": "^11.2.8"
+    "swiper": "^11.2.8",
+    "zod": "^4.0.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
