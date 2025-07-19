@@ -1,20 +1,18 @@
 // app/api/contact/route.ts
+import { prisma } from '@/db/prisma';
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import { z } from 'zod';
 
-// Types pour la requête
-interface ContactRequest {
-  firstName: string;
-  phone: string;
-  email: string;
-}
+
 
 // Schéma de validation zod
-const contactSchema = z.object({
+const contactSchema =  z.object({
   firstName: z.string().min(2, "Le prénom est requis"),
+  email: z.email("Email invalide"),
   phone: z.string().min(6, "Le téléphone est requis"),
-  email: z.string().email("Format d'email invalide"),
+  subject: z.string().min(2, "Le sujet est requis"),
+  message: z.string().min(5, "Le message est requis"),
 });
 
 export async function POST(request: NextRequest) {
@@ -28,7 +26,7 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
-    const { firstName, phone, email } = parse.data;
+    const { firstName, phone, email, subject, message } = parse.data;
 
     // Configuration Nodemailer
     const transporter = nodemailer.createTransport({
@@ -40,6 +38,18 @@ export async function POST(request: NextRequest) {
         pass: process.env.SMTP_PASS, // Votre mot de passe d'application
       },
     });
+
+    await prisma.contactMessage.create({
+      data:{
+        firstName,
+        email,
+        phone,
+        interest: subject,
+        // message
+      }
+    })
+
+
 
     // Template HTML pour l'email
     const htmlTemplate = `
@@ -108,7 +118,7 @@ export async function POST(request: NextRequest) {
     };
 
     // Envoi de l'email
-    await transporter.sendMail(mailOptions);
+    // await transporter.sendMail(mailOptions);
 
     // Email de confirmation à l'utilisateur (optionnel)
     const confirmationMailOptions = {
@@ -133,7 +143,7 @@ export async function POST(request: NextRequest) {
     };
 
     // Envoi de l'email de confirmation
-    await transporter.sendMail(confirmationMailOptions);
+    // await transporter.sendMail(confirmationMailOptions);
 
     return NextResponse.json(
       { message: 'Message envoyé avec succès !' },

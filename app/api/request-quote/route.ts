@@ -1,5 +1,5 @@
+import { prisma } from '@/db/prisma';
 import { NextRequest, NextResponse } from 'next/server';
-import { prisma } from '@/app/generated/prisma';
 import { z } from 'zod';
 
 const schema = z.object({
@@ -21,7 +21,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: parse.error.issues[0]?.message || 'Données invalides' }, { status: 400 });
     }
     const { firstName, lastName, email, number, company, website, services, message } = parse.data;
-    await prisma.requestQuote.create({
+    await prisma
+    .requestQuote.create({
       data: {
         firstName, lastName, email, number, company, website,
         services: Array.isArray(services) ? services.join(",") : services,

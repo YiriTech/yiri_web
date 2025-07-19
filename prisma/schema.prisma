@@ -1,6 +1,6 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "../app/generated/prisma"
+  output   = "app/generated/prisma/client"
 }
 
 datasource db {
@@ -9,8 +9,8 @@ datasource db {
 }
 
 model NewsLetterEmail {
-  id    String @id @default(cuid())
-  email String @unique
+  id        String   @id @default(cuid())
+  email     String   @unique
   createdAt DateTime @default(now())
 }
 
@@ -19,7 +19,8 @@ model ContactMessage {
   firstName String
   phone     String
   email     String
-  interest  String
+  interest  String?
+  message String?
   createdAt DateTime @default(now())
 }
 
@@ -31,19 +32,19 @@ model RequestQuote {
   number    String
   company   String
   website   String
-  services  String   // Stocker sous forme de string séparé par des virgules, ou utiliser une table relationnelle si besoin
+  services  String // Stocker sous forme de string séparé par des virgules, ou utiliser une table relationnelle si besoin
   message   String
   createdAt DateTime @default(now())
 }
 
 model BlogPost {
-  id        String   @id @default(cuid())
+  id        String    @id @default(cuid())
   title     String
-  slug      String   @unique
+  slug      String    @unique
   content   String
   image     String?
   author    String
-  createdAt DateTime @default(now())
+  createdAt DateTime  @default(now())
   comments  Comment[]
 }
 
@@ -66,10 +67,10 @@ model Event {
 }
 
 model Service {
-  id        String   @id @default(cuid())
-  name      String
+  id          String   @id @default(cuid())
+  name        String
   description String
-  createdAt DateTime @default(now())
+  createdAt   DateTime @default(now())
 }
 
 model Partner {

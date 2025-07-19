@@ -1,4 +1,4 @@
-import { prisma } from '@/app/generated/prisma';
+import { prisma } from '@/db/prisma';
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 
