@@ -47,11 +47,22 @@ const RequestQuoteMain = () => {
 
   const onSubmit = async (data: FormData) => {
     setStatus({ success: false, error: "" });
-    // Simuler un envoi
-    setTimeout(() => {
-      setStatus({ success: true, error: "" });
-      reset();
-    }, 1200);
+    try {
+      const response = await fetch('/api/request-quote', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const result = await response.json();
+      if (response.ok) {
+        setStatus({ success: true, error: "" });
+        reset();
+      } else {
+        setStatus({ success: false, error: result.message || "Erreur lors de l'envoi" });
+      }
+    } catch {
+      setStatus({ success: false, error: "Erreur de connexion" });
+    }
   };
 
   return (

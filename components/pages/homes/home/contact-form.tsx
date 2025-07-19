@@ -4,6 +4,9 @@ import Count from '../../common/count';
 import bgImage from "../../../../public/assets/img/contact/contact-bg.png";
 import image1 from "../../../../public/assets/img/contact/contact.png";
 import image2 from "../../../../public/assets/img/contact/contact-2.jpg";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 // Types pour le formulaire
 interface FormData {
@@ -19,57 +22,76 @@ interface FormStatus {
     error: string;
 }
 
+// Schéma zod pour le formulaire de contact
+const contactSchema = z.object({
+    firstName: z.string().min(2, "Le prénom est requis"),
+    phone: z.string().min(6, "Le téléphone est requis"),
+    email: z.string().email("Email invalide"),
+    interest: z.string().min(2, "L'intérêt est requis"),
+});
+type ContactFormData = z.infer<typeof contactSchema>;
+
 const ContactForm: React.FC = () => {
     // États du formulaire
-    const [formData, setFormData] = useState<FormData>({
-        firstName: '',
-        phone: '',
-        email: '',
-        interest: ''
-    });
-
     const [status, setStatus] = useState<FormStatus>({
         loading: false,
         success: false,
         error: ''
     });
+    const [newsletterEmail, setNewsletterEmail] = useState("");
+    const [newsletterStatus, setNewsletterStatus] = useState<{loading: boolean, success: boolean, error: string}>({loading: false, success: false, error: ""});
 
-    // Gestion des changements d'input
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({
-            ...prev,
-            [name]: value
-        }));
-    };
+    // react-hook-form
+    const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm<ContactFormData>({
+        resolver: zodResolver(contactSchema),
+        defaultValues: {
+            firstName: '',
+            phone: '',
+            email: '',
+            interest: ''
+        }
+    });
 
     // Soumission du formulaire
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        
-        // Reset status
+    const onSubmit = async (data: ContactFormData) => {
         setStatus({ loading: true, success: false, error: '' });
-
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
             });
-
             const result = await response.json();
-
             if (response.ok) {
                 setStatus({ loading: false, success: true, error: '' });
-                // Reset form
-                setFormData({ firstName: '', phone: '', email: '', interest: '' });
+                reset();
             } else {
                 setStatus({ loading: false, success: false, error: result.message || 'Erreur lors de l\'envoi' });
             }
         } catch (error) {
             setStatus({ loading: false, success: false, error: 'Erreur de connexion' });
+        }
+    };
+
+    // Ajout du handler newsletter
+    const handleNewsletter = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setNewsletterStatus({ loading: true, success: false, error: "" });
+        try {
+            const response = await fetch('/api/newsletter', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: newsletterEmail }),
+            });
+            const result = await response.json();
+            if (response.ok) {
+                setNewsletterStatus({ loading: false, success: true, error: "" });
+                setNewsletterEmail("");
+            } else {
+                setNewsletterStatus({ loading: false, success: false, error: result.message || 'Erreur lors de l\'inscription' });
+            }
+        } catch {
+            setNewsletterStatus({ loading: false, success: false, error: 'Erreur de connexion' });
         }
     };
 
@@ -100,42 +122,39 @@ const ContactForm: React.FC = () => {
                                 </div>
                             )}
 
-                            <form onSubmit={handleSubmit} className="contact__one-form">
+                            <form onSubmit={handleSubmit(onSubmit)} className="contact__one-form">
                                 <div className="contact__one-form-top">
-                                    <input 
-                                        type="text" 
-                                        name="firstName"
-                                        placeholder="Prénom..." 
-                                        value={formData.firstName}
-                                        onChange={handleChange}
+                                    <input
+                                        type="text"
+                                        placeholder="Prénom..."
+                                        {...register("firstName")}
                                         required
                                         disabled={status.loading}
+                                        className={errors.firstName ? "border-red-500" : ""}
                                     />
-                                    <input 
-                                        type="tel" 
-                                        name="phone"
-                                        placeholder="Votre Téléphone..." 
-                                        value={formData.phone}
-                                        onChange={handleChange}
+                                    {errors.firstName && <span className="text-red-500 text-xs">{errors.firstName.message}</span>}
+                                    <input
+                                        type="tel"
+                                        placeholder="Votre Téléphone..."
+                                        {...register("phone")}
                                         required
                                         disabled={status.loading}
+                                        className={errors.phone ? "border-red-500" : ""}
                                     />
+                                    {errors.phone && <span className="text-red-500 text-xs">{errors.phone.message}</span>}
                                 </div>
-                                <input 
-                                    type="email" 
-                                    name="email"
-                                    placeholder="Votre E-mail..." 
-                                    className="w-100" 
-                                    value={formData.email}
-                                    onChange={handleChange}
+                                <input
+                                    type="email"
+                                    placeholder="Votre E-mail..."
+                                    className={`w-100 ${errors.email ? "border-red-500" : ""}`}
+                                    {...register("email")}
                                     required
                                     disabled={status.loading}
                                 />
-                                <select 
-                                    name="interest"
-                                    value={formData.interest}
-                                    onChange={handleChange}
-                                    className="w-100 mt-3 p-3 border rounded"
+                                {errors.email && <span className="text-red-500 text-xs">{errors.email.message}</span>}
+                                <select
+                                    {...register("interest")}
+                                    className={`w-100 mt-3 p-3 border rounded ${errors.interest ? "border-red-500" : ""}`}
                                     required
                                     disabled={status.loading}
                                 >
@@ -147,12 +166,13 @@ const ContactForm: React.FC = () => {
                                     <option value="concours">Concours d'innovation</option>
                                     <option value="autre">Autre</option>
                                 </select>
-                                <button 
-                                    type="submit" 
+                                {errors.interest && <span className="text-red-500 text-xs">{errors.interest.message}</span>}
+                                <button
+                                    type="submit"
                                     className="btn-two w-100 mt-3"
-                                    disabled={status.loading}
+                                    disabled={status.loading || isSubmitting}
                                 >
-                                    {status.loading ? (
+                                    {status.loading || isSubmitting ? (
                                         <>
                                             <span className="spinner-border spinner-border-sm me-2" role="status"></span>
                                             Envoi en cours...
@@ -165,6 +185,26 @@ const ContactForm: React.FC = () => {
                                     )}
                                 </button>
                             </form>
+                            {/* Newsletter */}
+                            <div className="newsletter-box mt-5 p-4 bg-light rounded shadow-sm">
+                                <h5 className="mb-2">Recevez nos actualités</h5>
+                                <form onSubmit={handleNewsletter} className="flex flex-col md:flex-row gap-2">
+                                    <input
+                                        type="email"
+                                        placeholder="Votre email pour la newsletter..."
+                                        value={newsletterEmail}
+                                        onChange={e => setNewsletterEmail(e.target.value)}
+                                        required
+                                        className="form-control"
+                                        disabled={newsletterStatus.loading}
+                                    />
+                                    <button type="submit" className="btn btn-primary" disabled={newsletterStatus.loading}>
+                                        {newsletterStatus.loading ? 'Inscription...' : 'Je m\'inscris'}
+                                    </button>
+                                </form>
+                                {newsletterStatus.success && <div className="alert alert-success mt-2">Inscription réussie !</div>}
+                                {newsletterStatus.error && <div className="alert alert-danger mt-2">{newsletterStatus.error}</div>}
+                            </div>
                         </div>
                         <div className="col-xl-5">
                             <div className="contact__one-right">

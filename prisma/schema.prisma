@@ -1,0 +1,81 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model NewsLetterEmail {
+  id    String @id @default(cuid())
+  email String @unique
+  createdAt DateTime @default(now())
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  firstName String
+  phone     String
+  email     String
+  interest  String
+  createdAt DateTime @default(now())
+}
+
+model RequestQuote {
+  id        String   @id @default(cuid())
+  firstName String
+  lastName  String
+  email     String
+  number    String
+  company   String
+  website   String
+  services  String   // Stocker sous forme de string séparé par des virgules, ou utiliser une table relationnelle si besoin
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model BlogPost {
+  id        String   @id @default(cuid())
+  title     String
+  slug      String   @unique
+  content   String
+  image     String?
+  author    String
+  createdAt DateTime @default(now())
+  comments  Comment[]
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  postId    String
+  post      BlogPost @relation(fields: [postId], references: [id])
+  author    String
+  content   String
+  createdAt DateTime @default(now())
+}
+
+model Event {
+  id        String   @id @default(cuid())
+  title     String
+  subtitle  String?
+  image     String?
+  date      DateTime
+  createdAt DateTime @default(now())
+}
+
+model Service {
+  id        String   @id @default(cuid())
+  name      String
+  description String
+  createdAt DateTime @default(now())
+}
+
+model Partner {
+  id        String   @id @default(cuid())
+  name      String
+  logo      String?
+  website   String?
+  createdAt DateTime @default(now())
+}

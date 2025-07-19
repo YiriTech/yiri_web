@@ -7,12 +7,12 @@ const FormArea = () => {
                 <div className="row">
                     <div className="col-md-6 mb-30">
                         <div className="contact__form-area-item">
-                            <input type="text" name="name" placeholder="Full Name" required="required" />
+                            <input type="text" name="name" placeholder="Full Name"  />
                         </div>
                     </div>
                     <div className="col-md-6 md-mb-30">
                         <div className="contact__form-area-item">
-                            <input type="email" name="email" placeholder="Email Address" required="required" />
+                            <input type="email" name="email" placeholder="Email Address" />
                         </div>
                     </div>
                     <div className="col-md-12 mb-30">

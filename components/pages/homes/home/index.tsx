@@ -28,7 +28,6 @@ const Home = () => {
             <ContactForm />
             <WorkProcess />
             <PartnersSection />
-            {/* <BlogTwo /> */}
             <FooterTwo />
             <ScrollToTop />  
         </>

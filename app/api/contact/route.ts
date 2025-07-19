@@ -1,6 +1,7 @@
 // app/api/contact/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { z } from 'zod';
 
 // Types pour la requête
 interface ContactRequest {
@@ -9,28 +10,25 @@ interface ContactRequest {
   email: string;
 }
 
+// Schéma de validation zod
+const contactSchema = z.object({
+  firstName: z.string().min(2, "Le prénom est requis"),
+  phone: z.string().min(6, "Le téléphone est requis"),
+  email: z.string().email("Format d'email invalide"),
+});
+
 export async function POST(request: NextRequest) {
   try {
     // Parse du body
-    const body: ContactRequest = await request.json();
-    const { firstName, phone, email } = body;
-
-    // Validation simple
-    if (!firstName || !phone || !email) {
+    const body = await request.json();
+    const parse = contactSchema.safeParse(body);
+    if (!parse.success) {
       return NextResponse.json(
-        { message: 'Tous les champs sont requis' },
+        { message: parse.error.issues[0]?.message || 'Données invalides' },
         { status: 400 }
       );
     }
-
-    // Validation email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return NextResponse.json(
-        { message: 'Format d\'email invalide' },
-        { status: 400 }
-      );
-    }
+    const { firstName, phone, email } = parse.data;
 
     // Configuration Nodemailer
     const transporter = nodemailer.createTransport({
