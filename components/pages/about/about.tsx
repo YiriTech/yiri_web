@@ -157,54 +157,10 @@ const AboutMain = () => {
             </div>
         </div>
 
-        <div className="brand__area section-padding pt-0">
-            <div className="container">
-                <div className="row">
-                    <div className="col-xl-12">
-                        <div className="text__slider">
-                            <div className="text-slide">
-                                <div className="sliders scroll">
-                                    <div className="brand__area-item">
-                                        <img src={brand1.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand2.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand3.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand4.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand5.src} alt="image" />
-                                    </div>
-                                </div>
-                                <div className="sliders scroll">
-                                    <div className="brand__area-item">
-                                        <img src={brand1.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand2.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand3.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand4.src} alt="image" />
-                                    </div>
-                                    <div className="brand__area-item">
-                                        <img src={brand5.src} alt="image" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div className="py-4">
+          <WorkArea />
         </div>
-        <WorkArea />
-        <Testimonial />
+        {/* <Testimonial /> */}
         </>
     );
 };

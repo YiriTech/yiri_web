@@ -15,8 +15,10 @@ const ServicePage = () => {
             <HeaderOne variant="" />
             <BreadCrumb title="Nos Programmes" innerTitle="Axes Stratégiques" />
             <ServicesMain />
-            <WorkArea />
-            <Testimonial />
+            <div className="py-4">
+                <WorkArea />
+            </div>
+            {/* <Testimonial /> */}
             <FooterOne />
             <ScrollToTop />
         </>
