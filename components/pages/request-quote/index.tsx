@@ -9,9 +9,9 @@ import Header from '@/components/layout/headers/header/Header';
 const RequestQuotePage = () => {
     return (
         <>
-            <SEO pageTitle="Request Quote" />
+            <SEO pageTitle="Demande de service" />
             <Header variant='one' />
-            <BreadCrumb title="Request Quote" innerTitle="Request Quote" />
+            <BreadCrumb title="Demande de contact" innerTitle="Collaborations" />
             <RequestQuoteMain />
             <FooterOne />
             <ScrollToTop />

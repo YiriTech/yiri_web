@@ -8,6 +8,7 @@ interface LogoProps {
   size?: "sm" | "md" | "lg" | "xl";
   showText?: boolean;
   className?: string;
+  isWhite?:boolean
 }
 
 // Types pour les tailles
@@ -22,6 +23,7 @@ const Logo: React.FC<LogoProps> = ({
   variant = "default", 
   size = "md", 
   showText = true,
+  isWhite=false,
   className = "" 
 }) => {
   // Configuration des tailles avec classes Tailwind appropriées
@@ -89,7 +91,7 @@ const Logo: React.FC<LogoProps> = ({
           {/* Texte aligné avec l'icône */}
           {showText && (
             <span 
-              className={`${currentSize.text} font-bold uppercase ${currentVariant} transition-colors duration-300 tracking-wide flex items-center leading-none !no-underline hover:no-underline`}
+              className={`${currentSize.text} font-bold uppercase ${currentVariant} transition-colors duration-300 tracking-wide flex items-center leading-none !no-underline hover:no-underline ${isWhite ? "!text-white": null} `}
             >
               Yiri Africa
             </span>
