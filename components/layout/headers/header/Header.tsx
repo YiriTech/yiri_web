@@ -2,7 +2,7 @@
 import MainMenu from '../header-menu';
 import Search from '../search';
 import { useEffect, useState } from 'react';
-import SideBar from '../offcanvas';
+import SideBar from '../SideBarOffCanvas';
 import logo1 from "../../../../public/assets/img/logo-1.png";
 import logo2 from "../../../../public/assets/img/logo-2.png";
 import MobileMenuPopup from '../mobile-menu/menu-area';
@@ -129,8 +129,9 @@ const Header = ({ variant }: HeaderUnifiedProps) => {
                 {variant === 'two' && (
                   <div className="header__area-menubar-right-box-help">
                     <i className="flaticon-phone-call"></i>
-                    <div className="header__area-menubar-right-box-help-info">
+                    <div className="header__area-menubar-right-box-help-info ">
                       <span>Faire Appel</span>
+                      <Link href="tel:(307)555-0133">(07) 10914717</Link>
                       <Link href="tel:(307)555-0133">(06) 84499227</Link>
                     </div>
                   </div>

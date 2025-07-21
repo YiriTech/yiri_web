@@ -1,11 +1,40 @@
+"use client"
 import Social from "@/components/data/social";
 import Link from "next/link";
 import logo from "../../../public/assets/img/logo-2.png";
 import ctaBg from "../../../public/assets/img/subscribe/subscribe-one-shape-1.png";
 import footerBg from "../../../public/assets/img/shape/footer-two-bg.png";
 import servicesData from "@/components/data/services-data";
+import { useState } from "react";
 
 const FooterOne = () => {
+
+	const [newsletterEmail, setNewsletterEmail] = useState("");
+    const [newsletterStatus, setNewsletterStatus] = useState<{loading: boolean, success: boolean, error: string}>({loading: false, success: false, error: ""});
+
+
+	    // Ajout du handler newsletter
+		const handleNewsletter = async (e: React.FormEvent<HTMLFormElement>) => {
+			e.preventDefault();
+			setNewsletterStatus({ loading: true, success: false, error: "" });
+			try {
+				const response = await fetch('/api/newsletter', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({ email: newsletterEmail }),
+				});
+				const result = await response.json();
+				if (response.ok) {
+					setNewsletterStatus({ loading: false, success: true, error: "" });
+					setNewsletterEmail("");
+				} else {
+					setNewsletterStatus({ loading: false, success: false, error: result.message || 'Erreur lors de l\'inscription' });
+				}
+			} catch {
+				setNewsletterStatus({ loading: false, success: false, error: 'Erreur de connexion' });
+			}
+		};
+
     return (
         <>
         <div className="subscribe__one">
@@ -15,10 +44,19 @@ const FooterOne = () => {
                         <div className="subscribe__one-title">
                             <h3>S'inscrire a notre newsLetters</h3>
                         </div>
-                        <form action="#" className="subscribe__one-form">
-                            <input type="email" placeholder="Votre Email" />
-                            <button className="btn-two" type="submit">S'inscrire</button>
+                        <form onSubmit={handleNewsletter} className="subscribe__one-form">
+                            <input type="email" placeholder="Votre Email"
+							 defaultValue={newsletterEmail}
+							 onChange={e => setNewsletterEmail(e.target.value)}
+							/>
+                            <button className="btn-two" type="submit" 
+							 disabled={newsletterStatus.loading}
+							>
+                                        {newsletterStatus.loading ? 'Inscription...' : 'Je m\'inscris'}
+							</button>
                         </form>
+						{newsletterStatus.success && <div className="alert alert-success mt-2">Inscription réussie !</div>}
+                        {newsletterStatus.error && <div className="alert alert-danger mt-2">{newsletterStatus.error}</div>}
                     </div>
                 </div>
             </div>

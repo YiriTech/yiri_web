@@ -74,8 +74,8 @@ const FooterTwo = () => {
                                 <Logo isWhite />
                                 <p>Les experts en informatique et en sciences des données</p>
                                 <div className="footer__one-widget-about-social">
-                                    {/* <h4>Suivez-nous</h4>	
-                                    <Social /> */}
+                                    <h4>Suivez-nous</h4>	
+                                    <Social />
                                 </div>
                             </div>
                         </div>

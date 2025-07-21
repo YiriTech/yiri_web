@@ -22,6 +22,7 @@ const SideBar = ({ isOpen, setIsOpen }:{
 						</div>
 						<div className="header__area-menubar-right-sidebar-popup-contact-item-content">
 							<span>Téléphone</span>
+							<h6><Link href="tel:+212710914717">+212 7 10 91 47 17</Link></h6>
 							<h6><Link href="tel:+212684499227">+212 6 84 49 92 27</Link></h6>
 						</div>
 					</div>

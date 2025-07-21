@@ -22,10 +22,10 @@ const ResponsiveMenu = () => {
                     <a className={`mean-expand ${activeIcon("home")}`} onClick={() => active("home")}></a>
                 </li>  
                 <li><Link href="/about">A propos</Link></li>
-                <li><Link href="/team">Equipe</Link></li>
+                {/* <li><Link href="/team">Equipe</Link></li> */}
                 <li><Link href="/services">Services</Link></li>
-                <li><Link href="/events">Evenements</Link></li>
-                <li><Link href="/blog">Blog</Link></li>
+                {/* <li><Link href="/events">Evenements</Link></li> */}
+                {/* <li><Link href="/blog">Blog</Link></li> */}
                 <li><Link href="/contact">Contact</Link></li>   
             </ul>  
         </>
