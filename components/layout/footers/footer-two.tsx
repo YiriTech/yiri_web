@@ -1,11 +1,42 @@
+"use client";
 import Social from "@/components/data/social";
 import Link from "next/link";
 import ctaBg from "../../../public/assets/img/subscribe/subscribe-two-shape-2.png";
 import footerBg from "../../../public/assets/img/shape/footer-bg.png";
 import servicesData from "@/components/data/services-data";
 import Logo from "../logo";
+import { useState } from "react";
 
 const FooterTwo = () => {
+
+    const [newsletterEmail, setNewsletterEmail] = useState("");
+    const [newsletterStatus, setNewsletterStatus] = useState<{loading: boolean, success: boolean, error: string}>({loading: false, success: false, error: ""});
+
+
+
+      // Ajout du handler newsletter
+      const handleNewsletter = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setNewsletterStatus({ loading: true, success: false, error: "" });
+        try {
+            const response = await fetch('/api/newsletter', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: newsletterEmail }),
+            });
+            const result = await response.json();
+            if (response.ok) {
+                setNewsletterStatus({ loading: false, success: true, error: "" });
+                setNewsletterEmail("");
+            } else {
+                setNewsletterStatus({ loading: false, success: false, error: result.message || 'Erreur lors de l\'inscription' });
+            }
+        } catch {
+            setNewsletterStatus({ loading: false, success: false, error: 'Erreur de connexion' });
+        }
+    };
+
+
     return (
         <>
         <div className="subscribe__one two">
@@ -40,11 +71,11 @@ const FooterTwo = () => {
                     <div className="col-xl-3 col-md-6 col-sm-7 xl-mb-30">
                         <div className="footer__one-widget">
                             <div className="footer__one-widget-about">
-                                <Logo />
+                                <Logo isWhite />
                                 <p>Les experts en informatique et en sciences des données</p>
                                 <div className="footer__one-widget-about-social">
-                                    <h4>Suivez-nous</h4>	
-                                    <Social />
+                                    {/* <h4>Suivez-nous</h4>	
+                                    <Social /> */}
                                 </div>
                             </div>
                         </div>
@@ -95,10 +126,24 @@ const FooterTwo = () => {
                             <h4>Newsletter</h4>
                             <div className="footer__one-widget-subscribe">
                                 <p>Abonnez-vous à notre newsletter pour recevoir les dernières actualités</p>
-                                <form action="#">
-                                            <input type="text" name="email" placeholder="Votre email" required={true} />
-                                    <button type="submit"><i className="fas fa-paper-plane"></i></button>
+                                <form onSubmit={handleNewsletter}>
+                                            <input type="text"
+                                             name="email"
+                                              placeholder="Votre email"
+                                              value={newsletterEmail}
+                                                onChange={e => setNewsletterEmail(e.target.value)}
+                                               required={true} 
+                                               />
+                                    <button type="submit" disabled={newsletterStatus.loading}>
+                                        {newsletterStatus.loading ? (
+                                            <span className="spinner-border spinner-border-sm me-2" role="status"></span>
+                                            ) : (
+                                            <i className="fas fa-paper-plane"></i>
+                                            )}
+                                 </button>
                                 </form>
+                                {newsletterStatus.success && <div className="alert alert-success mt-2">Inscription réussie !</div>}
+                                {newsletterStatus.error && <div className="alert alert-danger mt-2">{newsletterStatus.error}</div>}
                             </div>
                         </div>
                     </div>

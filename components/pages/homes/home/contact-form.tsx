@@ -26,8 +26,7 @@ interface FormStatus {
 const contactSchema = z.object({
     firstName: z.string().min(2, "Le prénom est requis"),
     phone: z.string().min(6, "Le téléphone est requis"),
-    email: z.string().email("Email invalide"),
-    interest: z.string().min(2, "L'intérêt est requis"),
+    email: z.email("Email invalide"),
 });
 type ContactFormData = z.infer<typeof contactSchema>;
 
@@ -48,7 +47,6 @@ const ContactForm: React.FC = () => {
             firstName: '',
             phone: '',
             email: '',
-            interest: ''
         }
     });
 
@@ -152,22 +150,7 @@ const ContactForm: React.FC = () => {
                                     disabled={status.loading}
                                 />
                                 {errors.email && <span className="text-red-500 text-xs">{errors.email.message}</span>}
-                                <select
-                                    {...register("interest")}
-                                    className={`w-100 mt-3 p-3 border rounded ${errors.interest ? "border-red-500" : ""}`}
-                                    required
-                                    disabled={status.loading}
-                                >
-                                    <option value="">Sélectionnez votre intérêt...</option>
-                                    <option value="formation">Formation YIRI Academy</option>
-                                    <option value="digitalisation">Digitalisation d'entreprise</option>
-                                    <option value="partenariat">Partenariat stratégique</option>
-                                    <option value="conference">Participation aux conférences</option>
-                                    <option value="concours">Concours d'innovation</option>
-                                    <option value="autre">Autre</option>
-                                </select>
-                                {errors.interest && <span className="text-red-500 text-xs">{errors.interest.message}</span>}
-                                <button
+                            <button
                                     type="submit"
                                     className="btn-two w-100 mt-3"
                                     disabled={status.loading || isSubmitting}
@@ -192,13 +175,13 @@ const ContactForm: React.FC = () => {
                                     <input
                                         type="email"
                                         placeholder="Votre email pour la newsletter..."
-                                        value={newsletterEmail}
+                                        defaultValue={newsletterEmail}
                                         onChange={e => setNewsletterEmail(e.target.value)}
                                         required
                                         className="form-control"
                                         disabled={newsletterStatus.loading}
                                     />
-                                    <button type="submit" className="btn btn-primary" disabled={newsletterStatus.loading}>
+                                    <button type="submit" className="btn-two h-fit !text-sm" disabled={newsletterStatus.loading}>
                                         {newsletterStatus.loading ? 'Inscription...' : 'Je m\'inscris'}
                                     </button>
                                 </form>
