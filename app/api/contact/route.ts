@@ -124,7 +124,7 @@ export async function POST(request: NextRequest) {
     const confirmationMailOptions = {
       from: `"Yiri Tech" <${process.env.SMTP_USER}>`,
       to: email,
-      subject: "✅ Votre message a été reçu - Yiri Tech",
+      subject: "✅ Votre message a été reçu - Yiri",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #007bff; color: white; padding: 20px; text-align: center;">
@@ -132,7 +132,7 @@ export async function POST(request: NextRequest) {
           </div>
           <div style="padding: 20px;">
             <p>Nous avons bien reçu votre message et nous vous recontacterons très bientôt.</p>
-            <p>L'équipe Yiri Tech vous remercie pour votre intérêt.</p>
+            <p>L'équipe Yiri vous remercie pour votre intérêt.</p>
             <hr>
             <p style="color: #666; font-size: 12px;">
               Cet email a été envoyé automatiquement, merci de ne pas y répondre.
