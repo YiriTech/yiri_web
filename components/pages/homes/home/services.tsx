@@ -6,37 +6,43 @@ const yiriServicesData = [
     id: 1,
     icon: <i className="fas fa-graduation-cap"></i>,
     title: "YIRI Academy",
-    description: "Formations pratiques en data, développement, IA, cybersécurité et design via ateliers, bootcamps et programmes hybrides"
+    description: "Formations pratiques en data, développement, IA, cybersécurité et design via ateliers, bootcamps et programmes hybrides",
+    href:"/yiri/academy"
   },
   {
     id: 2,
     icon: <i className="fas fa-laptop-code"></i>,
     title: "YIRI Digital",
-    description: "Accompagnement des TPE/PME dans leur transformation digitale, diagnostics numériques et création d'outils de gestion"
+    description: "Accompagnement des TPE/PME dans leur transformation digitale, diagnostics numériques et création d'outils de gestion",
+    href:"/yiri/digital"
   },
   {
     id: 3,
     icon: <i className="fas fa-lightbulb"></i>,
     title: "YIRI Think Tank",
-    description: "Production de notes de réflexion, rapports stratégiques et veille technologique africaine pour influencer les politiques publiques"
+    description: "Production de notes de réflexion, rapports stratégiques et veille technologique africaine pour influencer les politiques publiques",
+        href:"/yiri/thinktank"
   },
   {
     id: 4,
     icon: <i className="fas fa-users"></i>,
     title: "YIRI Conférences",
-    description: "Organisation d'événements, panels et journées tech avec des invités africains et internationaux, accessibles gratuitement"
+    description: "Organisation d'événements, panels et journées tech avec des invités africains et internationaux, accessibles gratuitement",
+    href:"/yiri/conference"
   },
   {
     id: 5,
     icon: <i className="fas fa-trophy"></i>,
     title: "Concours d'Innovation",
-    description: "Détection et soutien de projets locaux à fort impact dans la santé, l'agriculture et l'éducation"
+    description: "Détection et soutien de projets locaux à fort impact dans la santé, l'agriculture et l'éducation",
+      href:"/"
   },
   {
     id: 6,
     icon: <i className="fas fa-network-wired"></i>,
     title: "Réseau & Partenariats",
-    description: "Connecter les talents aux entreprises, institutions et opportunités pour créer un écosystème tech africain dynamique"
+    description: "Connecter les talents aux entreprises, institutions et opportunités pour créer un écosystème tech africain dynamique",
+        href:"/yiri/academy"
   }
 ];
 
@@ -64,7 +70,7 @@ const ServicesTwo = () => {
                     <div className="services__two-single-service-content">
                       <h4>{data.title}</h4>
                       <p>{data.description}</p>
-                      <Link href={`/services/${data.id}`} className="btn-three">
+                      <Link href={data.href} className="btn-three">
                         En savoir plus<i className="fas fa-chevron-right"></i>
                       </Link>
                     </div>
