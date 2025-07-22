@@ -1,18 +1,22 @@
 "use client"
 import SEO from "@/components/data/seo";
-import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../../common/breadcrumb";
 import ServicesSingleMain from "./services-single";
 import FooterOne from "@/components/layout/footers/footer-one";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
+import Header from "@/components/layout/headers/header/Header";
 
-const ServicesSingle = ({serviceDetails}) => {
+const ServicesSingle = ({serviceDetails}:{
+    serviceDetails:{
+        title:string,
+    }
+}) => {
     const words = serviceDetails.title.split(' ');
     const firstAndSecondWord = words.slice(0, 2).join(' ');
     return (
         <>
             <SEO pageTitle={serviceDetails?.title} />            
-            <HeaderOne />
+            <Header variant="one" />
             <BreadCrumb title={firstAndSecondWord} innerTitle={serviceDetails?.title} />
             <ServicesSingleMain firstAndSecondWord={firstAndSecondWord}/>
             <FooterOne />
