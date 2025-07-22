@@ -317,14 +317,6 @@ const BannerHome = () => {
                                                         <span className="mr-2 sm:mr-3">{slide.buttonText}</span>
                                                         <i className="fas fa-arrow-right transition-transform group-hover:translate-x-2"></i>
                                                     </Link>
-                                                    
-                                                    <Link 
-                                                        href="/about" 
-                                                        className="group glass-effect text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full hover:bg-white/20 transition-all duration-300 inline-flex items-center justify-center border-2 border-white/30 hover:border-white/50 text-sm sm:text-base"
-                                                    >
-                                                        <i className="fas fa-play-circle mr-2 sm:mr-3 transition-transform group-hover:scale-110"></i>
-                                                        <span>Voir la Démo</span>
-                                                    </Link>
                                                 </div>
 
                                             </div>

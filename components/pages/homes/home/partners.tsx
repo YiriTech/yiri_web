@@ -7,59 +7,12 @@ import Link from "next/link";
 
 const PartnersSection = () => {
     const [activeSlide, setActiveSlide] = useState(0);
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
     const [counters, setCounters] = useState({ countries: 0, youth: 0, partners: 0 });
     const sectionRef = useRef(null);
 
-    // Animation des compteurs
-    const animateCounter = (target : number , duration = 2000) => {
-        let start = 0;
-        const increment = target / (duration / 16);
-        
-        const timer = setInterval(() => {
-            start += increment;
-            if (start >= target) {
-                start = target;
-                clearInterval(timer);
-            }
-            return Math.floor(start);
-        }, 16);
-        
-        return timer;
-    };
+   
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                    // Animation des compteurs
-                    setTimeout(() => {
-                        const timer1 = animateCounter(15);
-                        const timer2 = animateCounter(50);
-                        const timer3 = animateCounter(100);
-                        
-                        const interval = setInterval(() => {
-                            setCounters(prev => ({
-                                countries: Math.min(prev.countries + 1, 15),
-                                youth: Math.min(prev.youth + 3, 50),
-                                partners: Math.min(prev.partners + 5, 100)
-                            }));
-                        }, 50);
-                        
-                        setTimeout(() => clearInterval(interval), 2000);
-                    }, 500);
-                }
-            },
-            { threshold: 0.3 }
-        );
-
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-        }
-
-        return () => observer.disconnect();
-    }, []);
 
     const slideControl = {
         loop: true,
