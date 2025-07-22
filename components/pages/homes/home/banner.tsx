@@ -164,7 +164,7 @@ const BannerHome = () => {
                 }
             `}</style>
 
-            <div className="banner__two relative overflow-hidden">
+            <div className="banner__two relative min-h-screen overflow-hidden">
                 {/* Particles d'arrière-plan */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     {[...Array(20)].map((_, i) => (
