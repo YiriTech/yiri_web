@@ -1,7 +1,9 @@
 import React from 'react';
 import CountUp from 'react-countup';
 
-const Count = ({ number }) => {
+const Count = ({ number }:{
+    number:number
+}) => {
     return (
         <>
             <CountUp end={number} enableScrollSpy />

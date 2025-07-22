@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ModalVideo from "react-modal-video";
+// import ModalVideo from "react-modal-video";
 
 const Video = () => {
     const [openVideo, setOpenVideo] = useState(false);
@@ -13,7 +13,7 @@ const Video = () => {
                     <i className="fas fa-play"></i>
                 </span>
             </div>
-            <ModalVideo className='video-modal' channel="youtube" autoplay isOpen={openVideo} videoId="SZEflIVnhH8" onClose={() => setOpenVideo(false)} />
+            {/* <ModalVideo className='video-modal' channel="youtube" autoplay isOpen={openVideo} videoId="SZEflIVnhH8" onClose={() => setOpenVideo(false)} /> */}
         </>
     );
 };

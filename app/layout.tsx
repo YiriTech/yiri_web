@@ -6,7 +6,7 @@ export default function RootLayout({ children }:Readonly<{
   children: React.ReactNode;
 }>) {
     useEffect(() => {
-        require('bootstrap/dist/js/bootstrap.min.js');
+        // require('bootstrap/dist/js/bootstrap.min.js');
     }, []);
 
     return (
@@ -16,7 +16,7 @@ export default function RootLayout({ children }:Readonly<{
             </head>
             <body className='font-medium tracking-wider'>
                 {children}
-            </body>
+        </body>
         </html>
     );
 }

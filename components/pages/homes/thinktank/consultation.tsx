@@ -4,7 +4,9 @@ import shape2 from "../../../../public/assets/img/shape/shape-11-dark.png";
 import image from "../../../../public/assets/img/pages/consultation.jpg";
 import avatar from "../../../../public/assets/img/avatar/user.png";
 
-const Consultation = ({addClass}) => {
+const Consultation = ({addClass}:{
+    addClass?:string
+}) => {
     return (
         <>
         <div className={`consultation__area section-padding ${addClass}`}>

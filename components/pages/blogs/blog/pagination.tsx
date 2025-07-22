@@ -1,5 +1,11 @@
 
-const Pagination = ({ currentPage, handlePrevPage, totalPages, handleNextPage, setCurrentPage,}) => {
+const Pagination = ({ currentPage, handlePrevPage, totalPages, handleNextPage, setCurrentPage,}:{
+    currentPage : number
+    , handlePrevPage: () => void
+    , totalPages:number
+    , handleNextPage : () => void
+    , setCurrentPage:React.Dispatch<React.SetStateAction<number>>
+}) => {
     return (
         <div className="row t-center mt-55">
             <div className="col-xl-12">

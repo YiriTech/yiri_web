@@ -12,8 +12,21 @@ import avatar4 from "../../public/assets/img/avatar/avatar-4.jpg";
 import avatar5 from "../../public/assets/img/avatar/avatar-5.jpg";
 import avatar6 from "../../public/assets/img/avatar/avatar-6.jpg";
 import avatar7 from "../../public/assets/img/avatar/avatar-7.jpg";
+import { StaticImageData } from "next/image";
 
-const blogData = [
+export type blogDataType = {
+    number: string,
+    id: string,
+    date: string,
+    comment: string,
+    title: string,
+    image: StaticImageData,
+    avatar: StaticImageData,
+    name: string,
+    position: string,
+}[]
+
+const blogData : blogDataType = [
     {
         number: '01',
         id: 'software-development-agility-a-primer',

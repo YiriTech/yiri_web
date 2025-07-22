@@ -9,7 +9,7 @@ import shape2 from "../../../../public/assets/img/shape/banner-two-shape-3.png";
 import shape3 from "../../../../public/assets/img/shape/banner-two-shape-4.png";
 import shapeContent from "../../../../public/assets/img/shape/content.png";
 
-const BannerTwo = () => {
+const BannerHome = () => {
   	return (
 		<>
 			<div className="banner__two">
@@ -117,4 +117,4 @@ const BannerTwo = () => {
 	);
 };
 
-export default BannerTwo;
+export default BannerHome;

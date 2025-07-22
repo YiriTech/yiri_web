@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const FaqOne = () => {
 
-    const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState<number|null>(0);
     const faqs = [
         {
             question: "Do you have any Partnerships?",
@@ -21,7 +21,7 @@ const FaqOne = () => {
             answer: "For current clients requiring technical support, please visit the Support section of our website and submit a ticket through our automated system. Our technical team aims to respond to all tickets within 24 hours."
         },
     ];
-    const toggleFaq = (index) => {
+    const toggleFaq = (index:number|null) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 

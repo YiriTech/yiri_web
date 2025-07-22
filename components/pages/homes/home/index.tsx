@@ -1,6 +1,6 @@
 "use client"
 import SEO from "@/components/data/seo";
-import BannerTwo from "./banner";
+import BannerHome from "./banner";
 import AboutTwo from "./about";
 import ServicesTwo from "./services";
 import SkillArea from "./skill";
@@ -19,7 +19,7 @@ const Home = () => {
         <>
             <SEO pageTitle="YIRI TECH AFRICA - La Tech au Service de la Renaissance Africaine" />
             <Header variant="one"  />
-            <BannerTwo />
+            <BannerHome />
             <AboutTwo />
             <ServicesTwo />
             <SkillArea />

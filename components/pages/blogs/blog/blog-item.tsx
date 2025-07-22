@@ -1,7 +1,10 @@
+import { blogDataType } from '@/components/data/blog-data';
 import Link from 'next/link';
 import React from 'react';
 
-const BlogItem = ({currentBlogItems}) => {
+const BlogItem = ({currentBlogItems}:{
+	currentBlogItems:blogDataType
+}) => {
     return (
         <>
             {currentBlogItems?.map((data, id) => (

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const FaqOne = () => {
 
-    const [activeIndex, setActiveIndex] = useState(1);
+    const [activeIndex, setActiveIndex] = useState<number | null>(1);
     const faqs = [
         {
             question: "What services do you offer?",
@@ -21,7 +21,8 @@ const FaqOne = () => {
             answer: "Our office is open Monday-Friday from 9 AM to 5 PM [Time Zone]. For support outside of these hours, please consult our support package details or use our emergency contact methods outlined above."
         },
     ];
-    const toggleFaq = (index) => {
+    const toggleFaq = (index:number | null
+    ) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 

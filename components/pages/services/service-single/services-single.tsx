@@ -2,7 +2,9 @@ import ServicesDetails from '../../../../public/assets/img/service/service-detai
 import image1 from '../../../../public/assets/img/icon/service-details-icon-2.png';
 import image2 from '../../../../public/assets/img/icon/service-details-icon.png';
 
-const ServicesSingleMain = ({firstAndSecondWord}) => {
+const ServicesSingleMain = ({firstAndSecondWord}:{
+    firstAndSecondWord:string
+}) => {
     return (
         <>
         <div className="service__details section-padding">
