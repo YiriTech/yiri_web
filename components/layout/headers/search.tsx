@@ -1,6 +1,10 @@
 import React from 'react';
 
-const Search = ({ isOpen, setIsOpen, addClass }) => {
+const Search = ({ isOpen, setIsOpen, addClass }:{
+    isOpen : boolean
+    , setIsOpen : ( isOpen : boolean) =>void
+    , addClass?: string
+}) => {
     return (
         <>
             <div className={`header__area-menubar-right-box-search-box ${isOpen ? 'active' : ''}`}>
